@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "first_name": "Boycey",
+        "last_name": "Wilcott",
+        "email": "bwilcott0@fotki.com",
+        "password": "VPheqB4H"
+    },
+    {
+        "id": 2,
+        "first_name": "Vaclav",
+        "last_name": "Alcoran",
+        "email": "valcoran1@flickr.com",
+        "password": "ngv1BJnF04EC"
+    },
+    {
+        "id": 3,
+        "first_name": "Aubert",
+        "last_name": "Bradbury",
+        "email": "abradbury2@github.com",
+        "password": "u9k6vs0"
+    },
+    {
+        "id": 4,
+        "first_name": "Lorianna",
+        "last_name": "Szymaniak",
+        "email": "lszymaniak3@paginegialle.it",
+        "password": "0GepTjHdbxEs"
+    },
+    {
+        "id": 5,
+        "first_name": "Jo ann",
+        "last_name": "Vacher",
+        "email": "jvacher4@ameblo.jp",
+        "password": "NKib3iil"
+    },
+    {
+        "id": 6,
+        "first_name": "Filmore",
+        "last_name": "Bahike",
+        "email": "fbahike5@last.fm",
+        "password": "ihDFoY3z7mxi"
+    },
+    {
+        "id": 7,
+        "first_name": "Almeda",
+        "last_name": "Keelin",
+        "email": "akeelin6@myspace.com",
+        "password": "y5Yv5Yvh"
+    },
+    {
+        "id": 8,
+        "first_name": "Kort",
+        "last_name": "Tolland",
+        "email": "ktolland7@liveinternet.ru",
+        "password": "6WMJMIoGozd"
+    },
+    {
+        "id": 9,
+        "first_name": "Lindi",
+        "last_name": "Huett",
+        "email": "lhuett8@liveinternet.ru",
+        "paaword": "x84dpTZr"
+    },
+    {
+        "id": 10,
+        "first_name": "Jillane",
+        "last_name": "Chipping",
+        "email": "jchipping9@adobe.com",
+        "paaword": "BHnYTMd01"
+    }
+]
