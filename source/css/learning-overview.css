@@ -29,13 +29,13 @@ body{
     margin-right: 2vw;
     border-radius: 0.5vh;
     transition: 0.3s ease-in-out; 
-    box-shadow: inset #ffffff 0 0 0.5vh 0;
+    box-shadow: inset #000000 0.2vw 0 0.5vh 0;
 }
 
 .navbar li:hover{
     box-shadow: inset #f80a0a 0 0 2vh 0;
     font-style: #f80a0a;
-    transform: 100px 0 0 0;
+    transform: 0.2vw 0 0.5vh 0;
 }
 
 .logo{
@@ -53,6 +53,7 @@ padding: 0;
 
 .navbar a:hover{
     color: #f80a0a;
+    transition: 0.2s ease-in;
 }
 
 
