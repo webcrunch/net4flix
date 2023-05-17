@@ -28,14 +28,14 @@ body{
     margin-left: 2vw;
     margin-right: 2vw;
     border-radius: 0.5vh;
-    transition: 0.3s ease-in-out; 
-    box-shadow: inset #000000 0.2vw 0 0.5vh 0;
+    transition: 0.4s ease-in; 
+    box-shadow: inset #000000 0.12vw 0 0.8vh 0.2vw;
 }
 
 .navbar li:hover{
-    box-shadow: inset #f80a0a 0 0 2vh 0;
-    font-style: #f80a0a;
-    transform: 0.2vw 0 0.5vh 0;
+    box-shadow: inset #921818 9vw 0 9vh 0.2vw;
+    font-style: #aa0808;
+    transform: 0.2vw 0 0.5vh 0.2vw;
 }
 
 .logo{
@@ -52,7 +52,7 @@ padding: 0;
 }
 
 .navbar a:hover{
-    color: #f80a0a;
+    color: #ffffff;
     transition: 0.2s ease-in;
 }
 
