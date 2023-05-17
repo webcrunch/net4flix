@@ -77,16 +77,58 @@ box-sizing: border-box;
 
 }
 
+.courses{
+    display: inline-flex;
+    padding: 2vw;
+   display: flex;
+}
+
 .course-1{
-    order: 1;
-   
+    
+    margin-left: 2vw;
+    padding: 20px;
     background-color: rgb(182, 33, 33);
    
    
 }
 .course-2{
-    order: 2;
-   
-    background-color: rgb(23, 71, 202);
     
+    margin: 20px;
+    background-color: rgb(23, 71, 202);
+
+}
+
+.paper-1{
+order: 1;
+position: relative;
+background-color: #EEE6A2;
+width: 100%;
+height: 80vh;
+border: solid  black 1px;
+
+}
+
+.paper-2{
+    order: 2;
+position: relative;
+background-color: #EEE6A2;
+width: 100%;
+height: 80vh;
+border: solid  black 1px;
+}
+.paper-3{
+    order: 1;
+position: relative;
+background-color: #EEE6A2;
+width: 100%;
+height: 80vh;
+border: solid  black 1px;
+}
+.paper-4{
+    order: 1;
+position: relative;
+background-color: #EEE6A2;
+width: 100%;
+height: 80vh;
+border: solid  black 1px;
 }
