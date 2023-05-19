@@ -1,0 +1,102 @@
+[
+    {
+        "name": " Introduktion till DevOps",
+        "chapter": " This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Definition och utveckling av DevOps, Viktiga principer och mål med DevOps"
+    },
+    {
+        "name": "Förståelse för agila metoder",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Agil mjukvaruutveckling och dess relation till DevOps, Vanliga agila metoder och ramverk"
+    },
+    {
+        "name": "Kontinuerlig integration (CI)",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Introduktion till CI och dess betydelse inom DevOps, Komponenter och bästa praxis för CI-pipelines, Verktyg och teknologier för CI"
+    },
+    {
+        "name": "Vanliga agila metoder och ramverk",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "Kontinuerlig leverans och distribution (CD)",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Översikt över CD och dess roll inom DevOps, Automatisering av programvarureleaser, Leveransstrategier och överväganden, CD-verktyg och ramverk"
+    },
+    {
+        "name": "Infrastruktur som kod (IaC)",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Introduktion till IaC och dess fördelar, Verktyg för konfigurationshantering, Provisionering och hantering av infrastruktur"
+    },
+    {
+        "name": "Övervakning och loggning",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Betydelsen av övervakning och loggning inom DevOps, Mätvärden, varningar och loggningsramverk, Logganalys och felsökning"
+    },
+    {
+        "name": "Samarbeten och kommunikation",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "DevOps-kultur och samarbete, Kommunikationsverktyg och -tekniker, DevOps-teamstrukturer och roller"
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    }
+]
