@@ -9,7 +9,7 @@ const populateData = async() => {
     !localStorage.getItem("courses") ? localStorage.setItem("courses", [{ name: "Introduction to DevOps Practices:", chapters: 4 }, { name: "Introduction to Agile Development:", chapters: 5 }]) : null;
     !localStorage.getItem("chapters") ? localStorage.setItem("chapters", JSON.stringify(await fetchAll('chapters'))) : null;
     !localStorage.getItem("lessions") ? localStorage.setItem("lessions", JSON.stringify(await fetchAll('lessions'))): null;
-    
+    !localStorage.getItem("session") ? localStorage.setItem("session", null) : null;
     let lessions = JSON.parse(localStorage.getItem("lessions"));
     let chapters = JSON.parse(localStorage.getItem("chapters"));
 
