@@ -40,6 +40,131 @@
         "descriptionTitle": "DevOps-kultur och samarbete, Kommunikationsverktyg och -tekniker, DevOps-teamstrukturer och roller"
     },
     {
+        "name": "Samarbeten och kommunikation",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "DevOps-kultur och samarbete, Kommunikationsverktyg och -tekniker, DevOps-teamstrukturer och roller"
+    },
+    {
+        "name": "Säkerhet och överensstämmelse",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Integrering av säkerhetspraxis inom DevOps, Överensstämmelse och regleringsaspekter, Automatisering av säkerhet och bästa praxis"
+    },
+    {
+        "name": "DevOps i molnet",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Molnteknik och dess påverkan på DevOps, Molntjänstmodeller (IaaS, PaaS, SaaS), DevOps-verktyg och -tjänster i molnet"
+    },
+    {
+        "name": "Fallstudier inom DevOps",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "descriptionTitle": "Verkliga exempel på framgångsrika DevOps-implementeringar, Lärdomar och bästa praxis"
+    },
+    {
+        "name": "Kontinuerlig integration (CI)",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta är en praxis inom programutveckling där kodändringar integreras regelbundet i en gemensam kodbas. CI syftar till att upptäcka integrationproblem tidigt genom att automatisera byggprocessen och köra automatiska tester."
+    },
+    {
+        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta är en förlängning av CI och handlar om att automatisera leveransen av programvaruförändringar till produktionsmiljön. CD syftar till att ha en automatiserad och repetitiv process för att snabbt och pålitligt leverera programvaruförändringar till användarna."
+    },
+    {
+        "name": "Infrastruktur som kod ",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta är en metodik där infrastrukturen för att köra applikationer hanteras genom kodfiler. Istället för att manuellt konfigurera servrar och resurser beskrivs infrastrukturen i kodformat, vilket gör det möjligt att automatisera skapandet och hanteringen av infrastrukturen."
+    },
+    {
+        "name": "Versionskontroll",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta är en systematisk metod för att hantera ändringar i kodbaser och andra dokument. Versionskontrollsystem registrerar förändringar över tiden, möjliggör återställning till tidigare versioner och underlättar samarbete inom utvecklingsteam."
+    },
+    {
+        "name": "Automatiserad testning",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta innebär att testprocesser automatiseras för att snabbt upptäcka fel och problem i mjukvaran. Automatiserade tester kan utföras kontinuerligt och kan vara en del av CI/CD-pipelines för att säkerställa att programvaruförändringar inte bryter befintlig funktionalitet."
+    },
+    {
+        "name": "Övervakning",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "descriptionTitle": "Detta handlar om att övervaka och övervaka prestanda och tillgänglighet hos system och applikationer i produktion. Övervakning kan innefatta att samla in och analysera loggar, mäta resursanvändning och notifiera om problem eller avvikelser."
+    },
+    {
+        "name": "Git",
+        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+        "descriptionTitle": "Git är ett distribuerat versionshanteringssystem som används för att spåra ändringar i källkoden under mjukvaruutveckling. Det möjliggör samtidigt arbete av flera utvecklare på samma kodbas, spårar revisioner och underlättar enkel samarbete och grening av kod."
+    },
+    {
+        "name": "Jenkins",
+        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+        "descriptionTitle": "Jenkins är en öppen automatiseringsserver som underlättar kontinuerlig integration och kontinuerlig leverans (CI/CD). Det möjliggör automatisering av byggning, testning och distribution av programvaruapplikationer, vilket möjliggör snabbare och mer effektiva utvecklingscykler."
+    },
+    {
+        "name": "Docker",
+        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+        "descriptionTitle": "Docker är en containerplattform som möjliggör skapande och distribution av applikationer i lätta, isolerade containrar. Containrar paketerar applikationer och deras beroenden och ger en konsekvent och reproducerbar miljö över olika system."
+    },
+    {
+        "name": "Kubernetes",
+        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+        "descriptionTitle": "Kubernetes är en öppen orkestreringsplattform för containrar som automatiserar distribution, skalning och hantering av containeriserade applikationer. Det hjälper till att hantera och samordna containrar över en kluster av noder, vilket säkerställer hög tillgänglighet och skalbarhet."
+    },
+    {
+        "name": "Grundläggande begrepp och principer",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "descriptionTitle": "Börja med att introducera grundläggande begrepp och principer inom DevOps på ett tydligt och lättförståeligt sätt. Detta kan omfatta förklaringar om varför DevOps är viktigt, vilka fördelar det erbjuder och hur det främjar samarbete och effektivitet."
+    },
+    {
+        "name": "Tekniska exempel och demonstrationer",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "descriptionTitle": "För att tilltala den tekniska publiken kan du inkludera praktiska exempel och demonstrationer av verktygen som Git, Jenkins, Docker och Kubernetes. Visa hur dessa verktyg används i praktiken för att underlätta kontinuerlig integration, leverans och driftsättning av applikationer."
+    },
+    {
+        "name": "Affärsmässiga fördelar och case-studier",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "descriptionTitle": "För att engagera den icke-tekniska publiken kan du fokusera på affärsmässiga fördelar och ge konkreta exempel på hur DevOps kan förbättra effektiviteten, produktiviteten och kundnöjdheten. Inkludera case-studier och framgångshistorier från företag som har framgångsrikt infört DevOps."
+    },
+    {
+        "name": "Interaktiva övningar och gruppdiskussioner",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "descriptionTitle": "Organisera interaktiva övningar och gruppdiskussioner där deltagarna kan tillämpa sina kunskaper och diskutera olika aspekter av DevOps. Detta kan vara till nytta för både tekniska och icke-tekniska deltagare genom att främja samarbete och kunskapsutbyte."
+    },
+    {
+        "name": "Anpassade material",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "descriptionTitle": "Tillhandahåll kursmaterial som är anpassade för både teknisk och icke-teknisk publik. Det kan inkludera tekniska guider och handledningar för tekniska deltagare samt mer konceptuella och affärsorienterade material för icke-tekniska deltagare."
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
+        "name": "",
+        "chapter": "",
+        "descriptionTitle": ""
+    },
+    {
         "name": "",
         "chapter": "",
         "descriptionTitle": ""
