@@ -8,13 +8,12 @@ const fetchUsers = async () => {
         .then((response) => response.json()));
 }
 
-
 const fetchChapters = async () => {
     return await (fetch('/assets/chapters.json')
         .then((response) => response.json()));
 }
 
 
-
-
 document.addEventListener('DOMContentLoaded', checkIfusers, false);
+
+window.location.href = "source/html/pages/login/login.html";
