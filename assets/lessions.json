@@ -135,93 +135,103 @@
         "descriptionTitle": "Tillhandahåll kursmaterial som är anpassade för både teknisk och icke-teknisk publik. Det kan inkludera tekniska guider och handledningar för tekniska deltagare samt mer konceptuella och affärsorienterade material för icke-tekniska deltagare."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Kundcentrerad utveckling",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices",
+        "descriptionTitle": "Både agila metoder och DevOps fokuserar på att sätta kunden i centrum. Agila metoder, som Scrum eller Kanban, betonar kontinuerlig kundinteraktion och iterativt arbete för att säkerställa att utvecklingen möter kundens behov. DevOps, å andra sidan, strävar efter att leverera högkvalitativa och pålitliga produkter genom kontinuerlig feedback och snabb leverans. Genom att kombinera agila metoder och DevOps kan man bättre anpassa sig till kundens krav och snabbt reagera på deras behov."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Tvärfunktionella team",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices",
+        "descriptionTitle": "Agila metoder främjar bildandet av tvärfunktionella team där utvecklare, testare, operatörer och andra intressenter samarbetar tätt. Dessa team arbetar tillsammans för att planera, utveckla, testa och distribuera mjukvarulösningar. DevOps främjar också samarbete och bryter ner silos mellan utveckling och drift. Genom att kombinera agila metoder och DevOps kan tvärfunktionella team skapas och samarbetet förbättras genom hela utvecklings- och driftsprocessen."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Kontinuerlig leverans och iteration",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices",
+        "descriptionTitle": "Agila metoder betonar iterativ utveckling och kontinuerlig feedback för att snabbt leverera värde till kunden. DevOps möjliggör kontinuerlig leverans och driftsättning genom automatisering och standardisering av utvecklings-, testnings- och distributionsprocesser. Genom att använda agila metoder i kombination med DevOps kan utvecklingsteam snabbt iterera och leverera nya funktioner till kunderna samtidigt som de bibehåller hög kvalitet och stabilitet."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Iterativ utveckling",
+        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+        "descriptionTitle": "Iterativ utveckling är en central princip inom agil utveckling. Istället för att följa en linjär utvecklingsprocess betonar den iterativa metoden att arbeta i korta cykler, kända som sprintar eller iterationer. Varje iteration fokuserar på att leverera en fungerande och testbar del av produkten. Genom att använda feedback från varje iteration kan teamet anpassa och förbättra produkten över tiden."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Självorganiserande team",
+        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+        "descriptionTitle": "Inom agil utveckling är självorganiserande team en viktig princip. Istället för att ha traditionella hierarkiska strukturer främjar agil utveckling att teamen tar ansvar för att organisera sig själva och fatta beslut. Detta främjar samarbete, engagemang och kreativitet inom teamet och möjliggör snabbare och mer effektiva beslut."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Kundsamarbete",
+        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+        "descriptionTitle": "Agil utveckling betonar betydelsen av att involvera kunden genom hela utvecklingsprocessen. Genom att ha kontinuerlig kommunikation och samarbete med kunden kan teamet förstå och möta deras behov på ett mer exakt sätt. Detta inkluderar att få feedback på produkten och att anpassa sig till ändrade krav och prioriteringar."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Agila ramverk",
+        "chapter": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+        "descriptionTitle": "Introducera de populära agila ramverken som Scrum eller Kanban. Förklara deras principer, roller och processer. Diskutera hur dessa ramverk hjälper till att organisera och strukturera arbetsflödet i ett agilt team."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Användarberättelser",
+        "chapter": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+        "descriptionTitle": "Förklara begreppet användarberättelser och hur de används för att fånga användarnas behov och krav. Diskutera tekniker för att skapa och prioritera användarberättelser, samt hur de används som underlag för att planera och genomföra utvecklingsarbete."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Backloghantering",
+        "chapter": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+        "descriptionTitle": "Förklara vikten av produktbacklog och hur den används för att prioritera och organisera arbetet. Diskutera tekniker för att hantera och prioritera backloggen, inklusive att bryta ner användarberättelser i mindre arbetsenheter och uppskatta arbetsinsatser."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Sprintplanering",
+        "chapter": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+        "descriptionTitle": "Förklara sprintplaneringens syfte och process. Diskutera hur man väljer arbete från produktbackloggen för att ingå i en sprint och hur man planerar arbetsuppgifterna inom sprintens tidsram. Betona vikten av att uppnå överenskomna sprintmål."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Retrospektiv",
+        "chapter": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+        "descriptionTitle": "Diskutera betydelsen av retrospektiv, där teamet reflekterar över arbetet som har utförts under en sprint. Förklara hur retrospektiv hjälper teamet att identifiera vad som fungerade bra och vad som kan förbättras. Diskutera olika tekniker för retrospektiv och hur teamet kan dra nytta av dessa insikter för att ständigt förbättra sin arbetsprocess."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Översikt över agila projektledningsverktyg",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "descriptionTitle": "Ge en introduktion till populära agila projektledningsverktyg som Jira och Trello. Förklara deras grundläggande funktioner och hur de används för att hantera och spåra arbetsuppgifter och projektstatus."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Användning av agila projektledningsverktyg i DevOps",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "descriptionTitle": "Diskutera hur agila projektledningsverktyg kan integreras med DevOps-arbetsflöden. Visa hur dessa verktyg kan användas för att organisera och spåra utvecklingsuppgifter, testning, distributionsplaner och övervakning inom en DevOps-miljö."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Skapande av arbetsflöden och boards",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "descriptionTitle": "Förklara hur man skapar och konfigurerar arbetsflöden och boards i agila projektledningsverktyg. Diskutera olika sätt att strukturera och organisera arbetsuppgifter, användarberättelser och uppgiftsbegränsningar för att underlätta effektivt arbete och samarbete."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Integration med versionskontroll och CI/CD",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "descriptionTitle": "Diskutera hur agila projektledningsverktyg kan integreras med versionskontrollsystem som Git och CI/CD-verktyg som Jenkins. Visa hur denna integration möjliggör automatisk uppdatering av arbetsuppgifter och boards baserat på kodförändringar och byggstatus."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Rapportering och uppföljning",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "descriptionTitle": "Förklara hur agila projektledningsverktyg kan användas för att generera rapporter och mätvärden som hjälper till att övervaka projektframsteg, produktivitet och kvalitet. Diskutera hur denna information kan användas för att identifiera flaskhalsar och förbättringsområden inom arbetsflödet."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Samarbete och kommunikation",
+        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+        "descriptionTitle": "Agila metoder främjar samarbete och kommunikation över olika funktionella områden och roller inom ett team. Genom att integrera agila metoder inom en DevOps-kultur kan utvecklare och driftpersonal arbeta nära varandra, utbyta kunskap och erfarenheter, och samarbeta för att uppnå gemensamma mål."
     },
     {
-        "name": "",
-        "chapter": "",
-        "descriptionTitle": ""
+        "name": "Snabb feedback och iterativt arbete",
+        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+        "descriptionTitle": "Agila metoder betonar vikten av snabb feedback från kunder och intressenter. Genom att införliva agila metoder inom DevOps-kulturen kan utvecklare och driftpersonal snabbt samla in och använda feedback för att iterativt förbättra produkten eller systemet. Detta bidrar till att säkerställa att lösningen uppfyller kundens behov och förväntningar."
+    },
+    {
+        "name": "Automatisering och standardisering",
+        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+        "descriptionTitle": "DevOps främjar automatisering och standardisering av processer för att uppnå snabbare och mer pålitlig leverans. Agila metoder kan stödja detta genom att erbjuda strukturerade ramverk för att automatisera testning, integration och distribution av kod. Utvecklare och driftpersonal kan tillsammans skapa automatiserade processer som främjar effektivitet och minimerar fel."
+    },
+    {
+        "name": "Ständig förbättring",
+        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+        "descriptionTitle": "Både agila metoder och DevOps strävar efter ständig förbättring. Genom att kombinera de två kan man skapa en kultur där utvecklare och driftpersonal aktivt identifierar och löser problem, delar lärdomar och tar initiativ till att förbättra arbetsflöden och processer. Detta leder till en kontinuerlig utveckling av både produkter och arbetsmetoder."
     }
 ]
