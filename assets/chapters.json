@@ -1,47 +1,47 @@
 [
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "1.1",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "1.2",
+        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "1.3",
+        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "1.4",
+        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "2.1",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "2.2",
+        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "2.3",
+        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "2.4",
+        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "2.5",
+        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
         "lession": []
     }
 ]
