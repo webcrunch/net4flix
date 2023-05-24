@@ -141,12 +141,12 @@
     },
     {
         "name": "Tvärfunktionella team",
-        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices-",
         "descriptionTitle": "Agila metoder främjar bildandet av tvärfunktionella team där utvecklare, testare, operatörer och andra intressenter samarbetar tätt. Dessa team arbetar tillsammans för att planera, utveckla, testa och distribuera mjukvarulösningar. DevOps främjar också samarbete och bryter ner silos mellan utveckling och drift. Genom att kombinera agila metoder och DevOps kan tvärfunktionella team skapas och samarbetet förbättras genom hela utvecklings- och driftsprocessen."
     },
     {
         "name": "Kontinuerlig leverans och iteration",
-        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices",
+        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices.",
         "descriptionTitle": "Agila metoder betonar iterativ utveckling och kontinuerlig feedback för att snabbt leverera värde till kunden. DevOps möjliggör kontinuerlig leverans och driftsättning genom automatisering och standardisering av utvecklings-, testnings- och distributionsprocesser. Genom att använda agila metoder i kombination med DevOps kan utvecklingsteam snabbt iterera och leverera nya funktioner till kunderna samtidigt som de bibehåller hög kvalitet och stabilitet."
     },
     {

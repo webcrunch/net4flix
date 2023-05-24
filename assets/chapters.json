@@ -1,47 +1,47 @@
 [
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+        "name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+        "name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
         "lession": []
     },
     {
         "course": "Introduction to DevOps Practices",
-        "chapter": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+        "name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "Agile methodologies play a crucial role in the success of DevOps practices.",
+        "name": "Agile methodologies play a crucial role in the success of DevOps practices.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+        "name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+        "name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+        "name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
         "lession": []
     },
     {
         "course": "Introduction to Agile Development",
-        "chapter": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+        "name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
         "lession": []
     }
 ]
