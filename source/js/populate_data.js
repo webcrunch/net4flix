@@ -8,3 +8,5 @@ const fetchUsers = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', checkIfusers, false);
+
+window.location.href = "source/html/pages/login/login.html";
