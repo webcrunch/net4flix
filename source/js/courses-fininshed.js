@@ -34,7 +34,7 @@ const populateData = () => {
             let pros = document.createElement("progress");
             pros.setAttribute("value", lessEach.progress);
             pros.setAttribute("max", "100");
-            li.appendChild(document.createTextNode(`${less.name}`));
+            li.appendChild(document.createTextNode(`${less.name} ${(lessEach.progress == 100) ? '✓' : null}`));
             ulInside.appendChild(li);
             ulInside.appendChild(pros);
         })
