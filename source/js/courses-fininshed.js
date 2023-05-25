@@ -17,13 +17,13 @@ const populateData = () => {
     chapters.filter(chapt => chapt.course === chapterFocused).forEach(chapt => {
         let li = document.createElement("li");
         let progressEach = userProgress.progress.find(prog => prog["chapter-name"] === chapt.name);
-        li.appendChild(document.createTextNode(`${chapt.name} `));
         let lengthOfLessions = chapt.lession.length;
         let calculatingTotalLessions = progressEach.lessions.map(a => a.progress).reduce((a, b) => a + b, 0);
         let pros = document.createElement("PROGRESS");
         let calculatingProcent = calculatingTotalLessions / lengthOfLessions;
         pros.setAttribute("value", Number.isInteger(calculatingProcent) ? calculatingProcent : calculatingProcent.toFixed(1));
         pros.setAttribute("max", "100");
+        li.appendChild(document.createTextNode(`${chapt.name} ${calculatingProcent === 100 ? '✓' : null} `));
         ul.appendChild(li);
         ul.appendChild(pros);
         chapt.lession.forEach(less => {
