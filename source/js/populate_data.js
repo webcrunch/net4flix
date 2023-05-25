@@ -10,6 +10,7 @@ const populateData = async() => {
     !localStorage.getItem("chapters") ? localStorage.setItem("chapters", JSON.stringify(await fetchAll('chapters'))) : null;
     !localStorage.getItem("lessions") ? localStorage.setItem("lessions", JSON.stringify(await fetchAll('lessions'))): null;
     !localStorage.getItem("session") ? localStorage.setItem("session", null) : null;
+    !localStorage.getItem("courseClicked") ? localStorage.setItem("courseClicked", null) : null;
     let lessions = JSON.parse(localStorage.getItem("lessions"));
     let chapters = JSON.parse(localStorage.getItem("chapters"));
 
@@ -19,8 +20,7 @@ const populateData = async() => {
         })
     })
     localStorage.setItem("chapters", JSON.stringify(chapters))
+    window.location.href = "source/html/pages/login/login.html"
 }
 
 document.addEventListener('DOMContentLoaded', populateData, false);
-
-window.location.href = "source/html/pages/login/login.html";
