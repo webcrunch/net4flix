@@ -11,6 +11,7 @@ const populateData = async() => {
     !localStorage.getItem("lessions") ? localStorage.setItem("lessions", JSON.stringify(await fetchAll('lessions'))): null;
     !localStorage.getItem("session") ? localStorage.setItem("session", null) : null;
     !localStorage.getItem("courseClicked") ? localStorage.setItem("courseClicked", null) : null;
+    !localStorage.getItem("progress") ? localStorage.setItem("progress", JSON.stringify(await fetchAll('progress'))) : null;
     let lessions = JSON.parse(localStorage.getItem("lessions"));
     let chapters = JSON.parse(localStorage.getItem("chapters"));
 
