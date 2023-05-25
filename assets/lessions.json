@@ -1,7 +1,7 @@
 [
     {
-        "name": " Introduktion till DevOps",
-        "chapter": " This course can provide an overview of the fundamental principles and practices of DevOps.",
+        "name": "Introduktion till DevOps",
+        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
         "descriptionTitle": "Definition och utveckling av DevOps, Viktiga principer och mål med DevOps"
     },
     {
@@ -40,11 +40,6 @@
         "descriptionTitle": "DevOps-kultur och samarbete, Kommunikationsverktyg och -tekniker, DevOps-teamstrukturer och roller"
     },
     {
-        "name": "Samarbeten och kommunikation",
-        "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
-        "descriptionTitle": "DevOps-kultur och samarbete, Kommunikationsverktyg och -tekniker, DevOps-teamstrukturer och roller"
-    },
-    {
         "name": "Säkerhet och överensstämmelse",
         "chapter": "This course can provide an overview of the fundamental principles and practices of DevOps.",
         "descriptionTitle": "Integrering av säkerhetspraxis inom DevOps, Överensstämmelse och regleringsaspekter, Automatisering av säkerhet och bästa praxis"
@@ -70,7 +65,7 @@
         "descriptionTitle": "Detta är en förlängning av CI och handlar om att automatisera leveransen av programvaruförändringar till produktionsmiljön. CD syftar till att ha en automatiserad och repetitiv process för att snabbt och pålitligt leverera programvaruförändringar till användarna."
     },
     {
-        "name": "Infrastruktur som kod ",
+        "name": "Infrastruktur som kod",
         "chapter": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
         "descriptionTitle": "Detta är en metodik där infrastrukturen för att köra applikationer hanteras genom kodfiler. Istället för att manuellt konfigurera servrar och resurser beskrivs infrastrukturen i kodformat, vilket gör det möjligt att automatisera skapandet och hanteringen av infrastrukturen."
     },
