@@ -23,7 +23,7 @@ const populateData = () => {
         let calculatingProcent = calculatingTotalLessions / lengthOfLessions;
         pros.setAttribute("value", Number.isInteger(calculatingProcent) ? calculatingProcent : calculatingProcent.toFixed(1));
         pros.setAttribute("max", "100");
-        li.appendChild(document.createTextNode(`${chapt.name} ${calculatingProcent === 100 ? '✓' : null} `));
+        li.appendChild(document.createTextNode(`${chapt.name} ${calculatingProcent === 100 ? '✓' : ''} `));
         ul.appendChild(li);
         ul.appendChild(pros);
         chapt.lession.forEach(less => {
@@ -34,7 +34,7 @@ const populateData = () => {
             let pros = document.createElement("progress");
             pros.setAttribute("value", lessEach.progress);
             pros.setAttribute("max", "100");
-            li.appendChild(document.createTextNode(`${less.name} ${(lessEach.progress == 100) ? '✓' : null}`));
+            li.appendChild(document.createTextNode(`${less.name} ${(lessEach.progress == 100) ? '✓' : ''}`));
             ulInside.appendChild(li);
             ulInside.appendChild(pros);
         })
