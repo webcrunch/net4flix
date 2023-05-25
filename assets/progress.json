@@ -62,19 +62,19 @@
                 "lessions": [
                     {
                         "name": "Samarbete och kommunikation",
-                        "progress": 12
+                        "progress": 34
                     },
                     {
                         "name": "Snabb feedback och iterativt arbete",
-                        "progress": 12
+                        "progress": 29
                     },
                     {
                         "name": "Automatisering och standardisering",
-                        "progress": 12
+                        "progress": 19
                     },
                     {
                         "name": "Ständig förbättring",
-                        "progress": 12
+                        "progress": 22
                     }
                 ]
             },
