@@ -6,7 +6,7 @@ const populateData = () => {
     document.querySelector('.titleCourse').innerHTML = `Courses for ${chapterFocused}`
     document.querySelector('h2').innerHTML = `User: ${user.first_name}  ${user.last_name}`;
     document.querySelector('h3').innerHTML = `Email: ${user.email}`;
-    document.querySelector('.user_name').innerHTML = ` Log out: ${user.first_name} `;
+    // document.querySelector('.user_name').innerHTML = ` Log out: ${user.first_name} `;
     // document.querySelector('.user_name').addEventListener("click", logout())
     let ul = document.querySelector('.chapters');
 
