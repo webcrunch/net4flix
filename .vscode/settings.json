@@ -3,5 +3,5 @@
     "source.addMissingImports",
     "source.organizeImports"
     ],
-    "liveServer.settings.root": "/"
+    "liveServer.settings.root": "/public"
 }
