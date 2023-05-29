@@ -11,7 +11,10 @@ const login = () => {
         // search the users for email and passwords
         let user = JSON.parse(users).find(user => user.email === email && user.password === password);
         
-        if(user) window.location.href = "/";
+        if (user) {
+            localStorage.setItem("session", JSON.stringify(user));
+            window.location.href = "/source/html/pages/home/home.html"
+        };
     });
 }
 
