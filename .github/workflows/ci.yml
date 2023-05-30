@@ -5,8 +5,8 @@ name: Node.js CI
 
 on:
   push:
-    - "**"
-    #branches: ["feature-Ci/CD-further"]
+    #- "**" feature-Ci/CD-further"
+    branches: ["**"]
   pull_request:
     branches: ["main"]
 
