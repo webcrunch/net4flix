@@ -6,7 +6,7 @@
   "scripts": {
     "test-ui": "cypress open",
     "test": "cypress run --browser chrome",
-    "dev": "cd public && live-server --port=8000 --browser=chrome",
+    "dev": "cd public && live-server --port=8000 ",
     "v-tt": "live-server --version"
   },
   "keywords": [],
