@@ -29,6 +29,6 @@ jobs:
       - name: npm install
         run: npm ci
       - name: gui start live server
-        run: npm run dev
+        run: npm run dev &
       - name: gui testing
         run: npm test
