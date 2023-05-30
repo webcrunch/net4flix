@@ -1,0 +1,16 @@
+{
+  "name": "net4flix",
+  "version": "1.0.0",
+  "description": "devops metodik och verktyg 1",
+  "main": "index.js",
+  "scripts": {
+    "test-ui": "cypress open",
+    "test": "cypress run --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0"
+  }
+}
