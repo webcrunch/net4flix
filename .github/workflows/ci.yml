@@ -28,12 +28,7 @@ jobs:
           cache: "npm"
       - name: npm install
         run: npm ci
-      - name: gui testing
+      - name: gui start live server
         run: npm run dev
       - name: gui testing
         run: npm test
-      #- run: npm run format
-      #- run: npm run lint
-      #- run: npm run build
-      #- run: npm run dev &
-      #- run: npm run test:run
