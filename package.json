@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test-ui": "cypress open",
-    "test": "cypress run --browser chrome"
+    "test": "cypress run --browser chrome",
+    "dev": "cd public && live-server --port=8000 --browser=chrome",
+    "v-tt": "live-server --version"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.13.0"
+    "cypress": "^12.13.0",
+    "live-server": "^1.2.2"
   }
 }

@@ -29,6 +29,8 @@ jobs:
       - name: npm install
         run: npm ci
       - name: gui testing
+        run: npm dev
+      - name: gui testing
         run: npm test
       #- run: npm run format
       #- run: npm run lint
