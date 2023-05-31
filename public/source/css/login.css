@@ -29,11 +29,13 @@ main {
 }
 
 main span {
-    padding: 1vh;
-    background-color: #DDDDDD;
+    padding: 2vh;
+    /* background-color: #DDDDDD; */
     border-radius: 1px;
-    opacity: 0.4;
+    background: rgb(225, 233, 233);
+    /*opacity: 0.1;*/
     font-size: x-large;
+    font-weight: 900;
     display: flex;
     margin-bottom: 2vh;
     align-items: center;
@@ -58,7 +60,7 @@ form {
 }
 
 form input {
-    margin: 4px;
+    margin: 4px 0;
 }
 
 
