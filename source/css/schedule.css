@@ -123,15 +123,6 @@ main{
     border-radius: 5px;
 }
 
-
-
-.name{
-    color: white;
-    text-decoration: underline;
-    margin-top: 0vh;
-    margin-bottom: -1vh;
-    text-align: center;
-}
 .name,.name2, .name3, .name4, .name5,.name6{
     color: white;
     text-decoration: underline;
@@ -140,26 +131,20 @@ main{
     text-align: center;
 }
 
-
-
 .place,.place2,.place3,.place4,.place5,.place6{
     margin-top: 0vh;
     color: white;
     margin-bottom: 0vh;
     align-items: left;
-    
+}
+
+.responsible{
+    margin-top: -1vh;
 }
 
 
-
-
-.time{
+.time,.time2,.time3,.time4,.time5,.time6{
     margin-top: 0vh;
-    color: rgb(255, 255, 255);
-    justify-content: space-around;
-}
-.time2,.time3,.time4,.time5,.time6{
-    margin-top: -2vh;
     color: white;
 }
 
