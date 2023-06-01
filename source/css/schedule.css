@@ -86,6 +86,7 @@ main{
     border-style: none;
     margin: 1vw;
     border-radius: 5px;
+    justify-content: space-between;
 }
 
 .tuseday{
@@ -142,8 +143,12 @@ main{
     margin-top: -1vh;
 }
 
-
-.time,.time2,.time3,.time4,.time5,.time6{
+.time{
+    margin-top: 0vh;
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+}
+.time2,.time3,.time4,.time5,.time6{
     margin-top: 0vh;
     color: white;
 }
@@ -153,10 +158,13 @@ main{
 
 
 .responsible{
-    margin-bottom: 10vh;
+    margin-top: 0vh;
+    margin-bottom:0vh;
     color: rgb(255, 255, 255);
     align-items: left;
 }
+
+
 .responsible2{
     margin-top: 0;
     color: rgb(255, 255, 255);
@@ -175,6 +183,7 @@ main{
     background-color: #09A5FF;
     border-radius: 8px;
     border: solid black 1px;
+   
       
 }
 
