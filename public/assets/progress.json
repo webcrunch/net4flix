@@ -235,30 +235,2118 @@
         ]
     },
     {
-        "id": 2
+        "id": 2,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 3
+        "id": 3,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 4
+        "id": 4,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 5
+        "id": 5,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 6
+        "id": 6,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 7
+        "id": 7,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 8
+        "id": 8,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 9
+        "id": 9,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id": 10
+        "id": 10,
+                "progress": [
+            {
+                "chapter-name": "Agile methodologies play a crucial role in the success of DevOps practices.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig leverans och iteration",
+                        "progress": 35
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can introduce the basic principles and values of Agile development, such as iterative development, self-organizing teams, and customer collaboration.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Iterativ utveckling",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Självorganiserande team",
+                        "progress": 56
+                    },
+                    {
+                        "name": "Kundsamarbete",
+                        "progress": 88
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also touch upon Agile project management tools like Jira or Trello, and how they integrate with DevOps workflows.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Översikt över agila projektledningsverktyg",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Användning av agila projektledningsverktyg i DevOps",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Skapande av arbetsflöden och boards",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Integration med versionskontroll och CI/CD",
+                        "progress": 12
+                    },
+                    {
+                        "name": "Rapportering och uppföljning",
+                        "progress": 12
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be useful for both developers and operations personnel to understand how Agile practices complement the DevOps culture.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Samarbete och kommunikation",
+                        "progress": 34
+                    },
+                    {
+                        "name": "Snabb feedback och iterativt arbete",
+                        "progress": 29
+                    },
+                    {
+                        "name": "Automatisering och standardisering",
+                        "progress": 19
+                    },
+                    {
+                        "name": "Ständig förbättring",
+                        "progress": 22
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover can include Agile frameworks like Scrum or Kanban, user stories, backlog management, sprint planning, and retrospective.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Agila ramverk",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Användarberättelser",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Backloghantering",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Sprintplanering",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Retrospektiv",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "This course can provide an overview of the fundamental principles and practices of DevOps.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Introduktion till DevOps",
+                        "progress": 100
+                    },
+                    {
+                        "name": "Förståelse för agila metoder",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Vanliga agila metoder och ramverk",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kontinuerlig leverans och distribution (CD)",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Infrastruktur som kod (IaC)",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning och loggning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Samarbeten och kommunikation",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Säkerhet och överensstämmelse",
+                        "progress": 44
+                    },
+                    {
+                        "name": "DevOps i molnet",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Fallstudier inom DevOps",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "Topics to cover could include continuous integration (CI), continuous delivery/continuous deployment (CD), infrastructure as code, version control, automated testing, and monitoring.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Kontinuerlig integration (CI)",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Kontinuerlig leverans/kontinuerlig distribution (CD)",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Infrastruktur som kod",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Versionskontroll",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Automatiserad testning",
+                        "progress": 33
+                    },
+                    {
+                        "name": "Övervakning",
+                        "progress": 33
+                    }
+                ]
+            },
+            {
+                "chapter-name": "The course can also introduce popular DevOps tools like Git, Jenkins, Docker, and Kubernetes.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Git",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Jenkins",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Docker",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Kubernetes",
+                        "progress": 99
+                    }
+                ]
+            },
+            {
+                "chapter-name": "It can be designed to cater to both technical and non-technical personnel, providing a broad understanding of DevOps concepts.",
+                "chapter-progress": null,
+                "lessions": [
+                    {
+                        "name": "Grundläggande begrepp och principer",
+                        "progress": 50
+                    },
+                    {
+                        "name": "Tekniska exempel och demonstrationer",
+                        "progress": 23
+                    },
+                    {
+                        "name": "Affärsmässiga fördelar och case-studier",
+                        "progress": 22
+                    },
+                    {
+                        "name": "Interaktiva övningar och gruppdiskussioner",
+                        "progress": 99
+                    },
+                    {
+                        "name": "Anpassade material",
+                        "progress": 33
+                    }
+                ]
+            }
+        ]
     }
 ]

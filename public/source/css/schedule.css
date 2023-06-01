@@ -34,11 +34,12 @@ main{
     flex-direction: row;
     padding: 1vw;
     margin: 1vw;
-    
+    transform: scale(1.1);
 }
 .days{
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -57,6 +58,8 @@ main{
     justify-content: center;
     position: relative;
 
+    border-style: none;
+
 }
 
 .clock-frame{
@@ -65,6 +68,7 @@ main{
     height: 100vh;
     background-color: rgb(255, 255, 255);
     border: solid black 1px;
+    
     margin-top: 0vw;
     align-content: center;
     text-align: center;
@@ -79,51 +83,48 @@ main{
     background-color: rgb(255, 255, 255);
     width: 8vw;
     height: 65vh;
-    border: solid 1px;
+    border-style: none;
     margin: 1vw;
+    border-radius: 5px;
+    justify-content: space-between;
 }
 
 .tuseday{
     background-color: rgb(255, 255, 255);
     width: 8vw;
     height: 65vh;
-    border: solid 1px;
+    border-style: none;
     margin: 1vw;
+    border-radius: 5px;
 }
-.wednesday{
+.wenesday{
     background-color: rgb(255, 255, 255);
     width: 8vw;
     height: 65vh;
-    border: solid 1px;
+    border-style: none;
     margin: 1vw;
+    border-radius: 5px;
 }
 
 .thursday{
     background-color: rgb(255, 255, 255);
     width: 8vw;
     height: 65vh;
-    border: solid 1px;
+    border-style: none;
     margin: 1vw;
+    border-radius: 5px;
 }
 
 .friday{
     background-color: rgb(255, 255, 255);
     width: 8vw;
     height: 65vh;
-    border: solid 1px;
+    border-style: none;
     margin: 1vw;
+    border-radius: 5px;
 }
-
-
 
 .name{
-    color: white;
-    text-decoration: underline;
-    margin-top: 0vh;
-    margin-bottom: -1vh;
-    text-align: center;
-}
-.name2{
     color: white;
     text-decoration: underline;
     margin-top: 0vh;
@@ -132,35 +133,25 @@ main{
 }
 
 .place{
-    color: white;
-    margin-bottom: -0.5vh;
-    align-items: left;
-    
-}
-.place2{
     margin-top: 0vh;
     color: white;
     margin-bottom: 0vh;
     align-items: left;
-    
+}
+
+.responsible{
+    margin-top: -1vh;
 }
 
 .time{
     margin-top: 0vh;
-    color: white;
-}
-.time2{
-    margin-top: -2vh;
-    color: white;
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
 }
 
 .responsible{
-    margin-top: -1.8vh;
-    color: rgb(255, 255, 255);
-    align-items: left;
-}
-.responsible2{
-    margin-top: 0;
+    margin-top: 0vh;
+    margin-bottom:0vh;
     color: rgb(255, 255, 255);
     align-items: left;
 }
@@ -171,11 +162,13 @@ main{
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.2vh;
+    font-size: 1.0vh;
     width: 100%;
     height: 6vh; /*every 5vh is equal to 1h */
     background-color: #09A5FF;
     border-radius: 8px;
+    border: solid black 1px;
+   
       
 }
 
@@ -191,56 +184,69 @@ main{
     background-color: #46af69;
     border-radius: 8px;
     justify-content: space-around;
+    border: solid black 1px;
 }
 
 .ci-cd{
-    margin-top: 1vh;
+    margin-top: 0.3vh;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.2vh;
+    font-size: 1.0vh;
     width: 100%;
-    height: 6vh; /*every 5vh is equal to 1h */
-    background-color: #09A5FF;
+    height: 9vh; /*every 5vh is equal to 1h */
+    color: white;
+    background-color: #46af69;
+    border: solid black 1px;
     border-radius: 8px;
+    justify-content: space-around;
 }
 
 .infrastructure{
-    margin-top: 1vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.2vh;
+    font-size: 1.0vh;
     width: 100%;
-    height: 6vh; /*every 5vh is equal to 1h */
-    background-color: #09A5FF;
+    height: 10vh; /*every 5vh is equal to 1h */
+    color: white;
+    background-color: #46af69;
+    border: solid black 1px;
     border-radius: 8px;
+    justify-content: space-around;
 }
 
 .monitoring-logging{
-    margin-top: 1vh;
+    margin-top: 1.0vh;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.2vh;
+    font-size: 1.0vh;
     width: 100%;
-    height: 6vh; /*every 5vh is equal to 1h */
-    background-color: #09A5FF;
+    height: 8vh; /*every 5vh is equal to 1h */
+    background-color: #46af69;
+    border: solid black 1px;
     border-radius: 8px;
+    justify-content: space-around;
+    color: white;
 }
 
 .documentation{
-    margin-top: 1vh;
+    margin-top: 0.7vh;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.2vh;
+    font-size: 1.0vh;
     width: 100%;
-    height: 6vh; /*every 5vh is equal to 1h */
-    background-color: #09A5FF;
+    height: 9.38vh; /*every 5vh is equal to 1h */
+    background-color: #46af69;
+    border: solid black 1px;
     border-radius: 8px;
+    justify-content: space-around;
+    color: white;
 }
