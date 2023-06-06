@@ -94,9 +94,23 @@ content .chapters {
     padding: 2vh;
 }
 
+.updateBtn {
+    padding: 10px;
+    width: 40%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    display: none;
+}
+
 .addBtn {
     padding: 10px;
-    width: 25%;
+    width: 40%;
     background: #d9d9d9;
     color: #555;
     float: left;
