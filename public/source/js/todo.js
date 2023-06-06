@@ -1,5 +1,5 @@
 
-const todoA = JSON.parse(localStorage.getItem("todos"));
+let todoA = JSON.parse(localStorage.getItem("todos"));
 
 const handligTodos = () => {
     todoA.length > 0 ? displayList(todoA) : null
@@ -40,39 +40,15 @@ const handligTodos = () => {
         };
         todoA.push(todo);
 
-
         localStorage.setItem("todos", JSON.stringify(todoA));
         displayList(todoA);
         handligTodos();
     });
 
-
-
-    // // Click on a close button to hide the current list item
-    // var close = document.getElementsByClassName("close");
-    // var i;
-    // for (i = 0; i < close.length; i++) {
-    //     close[i].onclick = function () {
-    //         var div = this.parentElement;
-    //         div.style.display = "none";
-    //     }
-    // }
-
-    // // Add a "checked" symbol when clicking on a list item
-    // var list = document.querySelector('ul');
-    // list.addEventListener('click', function (ev) {
-    //     if (ev.target.tagName === 'LI') {
-    //         ev.target.classList.toggle('checked');
-    //     }
-    // }, false);
-
-    // Create a new list item when clicking on the "Add" button
-
-
 }
 
 const removePost = id => {
-    delete todoA[id];
+    todoA = todoA.filter(todo => todo.id !== id);
     localStorage.setItem("todos", JSON.stringify(todoA));
     handligTodos();
 }
@@ -127,8 +103,6 @@ const displayList = arrayn => {
         li.appendChild(spanForDeletion)
         ul.appendChild(li);
         first_ul.appendChild(ul);
-
-
 
 
         spanForText.addEventListener("click", function (e) {
