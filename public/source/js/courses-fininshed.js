@@ -15,6 +15,15 @@ const populateData = () => {
     userProgress = userProgress[0];
 
     chapters.filter(chapt => chapt.course === chapterFocused).forEach(chapt => {
+       
+        let chapterDiv = document.createElement("div");
+        chapterDiv.classList.add("chapter");
+        let chapterTitle = document.createElement("div");
+        chapterTitle.classList.add("chapter-title");
+        chapterDiv.appendChild(chapterTitle);
+    
+        let lessonsDiv = document.createElement("div");
+        lessonsDiv.classList.add("lessons");
         let li = document.createElement("li");
         let progressEach = userProgress.progress.find(prog => prog["chapter-name"] === chapt.name);
         let lengthOfLessions = chapt.lession.length;
@@ -23,13 +32,16 @@ const populateData = () => {
         let calculatingProcent = calculatingTotalLessions / lengthOfLessions;
         pros.setAttribute("value", Number.isInteger(calculatingProcent) ? calculatingProcent : calculatingProcent.toFixed(1));
         pros.setAttribute("max", "100");
-        li.appendChild(document.createTextNode(`${chapt.name} ${calculatingProcent === 100 ? '✓' : ''} `));
-        ul.appendChild(li);
-        ul.appendChild(pros);
+        ul.appendChild(chapterDiv);
+        chapterTitle.appendChild(document.createTextNode(`${chapt.name} ${calculatingProcent === 100 ? '✓' : ''} `));
+        chapterDiv.appendChild(lessonsDiv);
+       
+      
+        chapterDiv.appendChild(pros);
         chapt.lession.forEach(less => {
             let lessEach = progressEach.lessions.find(prog => prog.name === less.name);
             let ulInside = document.createElement("ul");
-            ul.appendChild(ulInside);
+            lessonsDiv.appendChild(ulInside);
             let li = document.createElement("li");
             let pros = document.createElement("progress");
             pros.setAttribute("value", lessEach.progress);
