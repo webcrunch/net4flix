@@ -3,19 +3,7 @@ const todoA = JSON.parse(localStorage.getItem("todos"));
 
 const handligTodos = () => {
     todoA.length > 0 ? displayList(todoA) : null
-    // if (todoA.length > 0) document.querySelector('.todo-list').addEventListener("click", function (e) {
-    //     console.log(e);
-    // })
-    // Create a "close" button and append it to each list item
     const myNodelist = document.getElementsByTagName("myUL");
-    // for (let i = 0; i < myNodelist.length; i++) {
-    //     var span = document.createElement("SPAN");
-    //     var txt = document.createTextNode("\u00D7");
-    //     span.className = "close";
-    //     span.appendChild(txt);
-    //     myNodelist[i].appendChild(span);
-    // }
-
     document.querySelector('.updateBtn').addEventListener("click", function (e) {
         e.preventDefault();
         const hidden = document.querySelector("#postId");
@@ -31,11 +19,12 @@ const handligTodos = () => {
         todoA[id] = post;
         localStorage.setItem("todos", JSON.stringify(todoA));
         hidden.value = null;
+        document.querySelector('#myInput').value = null;
+        document.querySelector('#date').value = null;
         const addButton = document.querySelector('.addBtn');
         const editButton = document.querySelector('.updateBtn')
         addButton.style.display = 'block';
         editButton.style.display = 'none';
-        // displayList(todoA);
         handligTodos();
     });
 
@@ -82,14 +71,29 @@ const handligTodos = () => {
 
 }
 
+const removePost = id => {
+    delete todoA[id];
+    localStorage.setItem("todos", JSON.stringify(todoA));
+    handligTodos();
+}
 
 const editPost = id => {
     const post = todoA.find(todo => todo.id === id);
+    const close = document.querySelector('.editClose');
     const addButton = document.querySelector('.addBtn');
     const editButton = document.querySelector('.updateBtn')
     const inputText = document.querySelector('#myInput');
     const inputDate = document.querySelector('#date');
     const hidden = document.querySelector("#postId");
+    close.style.display = 'block';
+    close.addEventListener("click", function (e) {
+        inputText.value = null;
+        inputDate.value = null;
+        addButton.style.display = 'block';
+        editButton.style.display = 'none';
+        close.style.display = 'none';
+        handligTodos()
+    })
     hidden.value = post.id;
     inputText.value = post.task;
     inputDate.value = post.date;
@@ -105,19 +109,33 @@ const displayList = arrayn => {
         // let first_ul = document.querySelector('#myUL');
         let ul = document.createElement("ul");
         let li = document.createElement("li");
+        let li2 = document.createElement("li");
         li.setAttribute('id', a.id);
         li.classList.add('todo-list');
-        let span = document.createElement("SPAN");
+        let spanForText = document.createElement("SPAN");
+        let spanForDeletion = document.createElement("SPAN");
+        spanForText.title = "Click here for edit the todo post";
+        spanForDeletion.title = "Click here for remove the todo post";
+        spanForText.setAttribute('id', a.id);
+        spanForDeletion.setAttribute('id', a.id);
         let txt = document.createTextNode("\u00D7");
-        span.className = "close";
-        span.appendChild(txt);
-        let name = document.createTextNode(` Task: ${a.task} - Date: ${a.date}`);
-        li.appendChild(name);
-        li.appendChild(span)
+        spanForDeletion.className = "close";
+        spanForDeletion.appendChild(txt);
+        let name = document.createTextNode(` Task: ${a.task} - Date: ${a.date}   `);
+        spanForText.appendChild(name);
+        li.appendChild(spanForText);
+        li.appendChild(spanForDeletion)
         ul.appendChild(li);
         first_ul.appendChild(ul);
-        li.addEventListener("click", function (e) {
+
+
+
+
+        spanForText.addEventListener("click", function (e) {
             editPost(+e.target.id);
+        })
+        spanForDeletion.addEventListener("click", function (e) {
+            removePost(+e.target.id);
         })
     })
 

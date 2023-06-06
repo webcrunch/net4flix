@@ -124,3 +124,13 @@ content .chapters {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+.todo-list {
+    cursor: pointer;
+}
+
+
+.editClose {
+    cursor: pointer;
+    display: none;
+}
