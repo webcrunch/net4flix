@@ -1,23 +1,23 @@
 
-let todoA = JSON.parse(localStorage.getItem("todos"));
+const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
 
-const handligTodos = () => {
+const handligTodos = async () => {
+    let todoA = await fetchTodoData();
     todoA.length > 0 ? displayList(todoA) : null
     const myNodelist = document.getElementsByTagName("myUL");
     document.querySelector('.updateBtn').addEventListener("click", function (e) {
         e.preventDefault();
+        const close = document.querySelector('.editClose');
         const hidden = document.querySelector("#postId");
         let input = document.querySelector("#myInput").value;
         let date = document.querySelector("#date").value;
         const id = +hidden.value;
-
         const post = todoA.find(todo => todo.id === id);
-
-        if (input.trim().length < 1 || date.trim().length < 1) return alert("error")
         post.task = input;
         post.date = date;
         todoA[id] = post;
         localStorage.setItem("todos", JSON.stringify(todoA));
+        close.style.display = 'none';
         hidden.value = null;
         document.querySelector('#myInput').value = null;
         document.querySelector('#date').value = null;
@@ -30,30 +30,32 @@ const handligTodos = () => {
 
     document.querySelector('.addBtn').addEventListener("click", function (e) {
         e.preventDefault();
-        let input = document.querySelector("#myInput").value;
-        let date = document.querySelector("#date").value;
-        if (input.trim().length < 1 || date.trim().length < 1) return alert("error")
+        let input = document.querySelector("#myInput");
+        let date = document.querySelector("#date");
+        if (input.value.trim().length < 1 || date.value.trim().length < 1) return alert("error")
         let todo = {
             id: todoA.length,
-            task: input,
-            date: date
+            task: input.value,
+            date: date.value
         };
-        todoA.push(todo);
-
+        todoA.push(todo)
         localStorage.setItem("todos", JSON.stringify(todoA));
+        input.value = null;
+        date.value = null;
         displayList(todoA);
         handligTodos();
     });
-
 }
 
-const removePost = id => {
-    todoA = todoA.filter(todo => todo.id !== id);
-    localStorage.setItem("todos", JSON.stringify(todoA));
+
+const removePost = async id => {
+    let todoA = await fetchTodoData();
+    localStorage.setItem("todos", JSON.stringify(todoA.filter(todo => todo.id !== id)));
     handligTodos();
 }
 
-const editPost = id => {
+const editPost = async id => {
+    let todoA = await fetchTodoData();
     const post = todoA.find(todo => todo.id === id);
     const close = document.querySelector('.editClose');
     const addButton = document.querySelector('.addBtn');
@@ -61,6 +63,11 @@ const editPost = id => {
     const inputText = document.querySelector('#myInput');
     const inputDate = document.querySelector('#date');
     const hidden = document.querySelector("#postId");
+    hidden.value = post.id;
+    inputText.value = post.task;
+    inputDate.value = post.date;
+    addButton.style.display = 'none';
+    editButton.style.display = 'block';
     close.style.display = 'block';
     close.addEventListener("click", function (e) {
         inputText.value = null;
@@ -70,11 +77,6 @@ const editPost = id => {
         close.style.display = 'none';
         handligTodos()
     })
-    hidden.value = post.id;
-    inputText.value = post.task;
-    inputDate.value = post.date;
-    addButton.style.display = 'none';
-    editButton.style.display = 'block';
 }
 
 const displayList = arrayn => {
@@ -82,7 +84,6 @@ const displayList = arrayn => {
     first_ul.replaceChildren();
     arrayn.forEach(a => {
 
-        // let first_ul = document.querySelector('#myUL');
         let ul = document.createElement("ul");
         let li = document.createElement("li");
         let li2 = document.createElement("li");
