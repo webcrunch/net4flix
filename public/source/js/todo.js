@@ -3,7 +3,7 @@ const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos")
 
 const handligTodos = async () => {
     let todoA = await fetchTodoData();
-    todoA.length > 0 ? displayList(todoA) : null
+    displayList(todoA)
     const myNodelist = document.getElementsByTagName("myUL");
     document.querySelector('.updateBtn').addEventListener("click", function (e) {
         e.preventDefault();
