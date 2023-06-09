@@ -1,60 +1,70 @@
+// var app = {
+//     settings: {
+//         container: $('.calendar'),
+//         calendar: $('.front'),
+//         days: $('.weeks span'),
+//         form: $('.back'),
+//         input: $('.back input'),
+//         buttons: $('.back button')
+//     },
+
+//     init: function () {
+//         instance = this;
+//         settings = this.settings;
+//         this.bindUIActions();
+//     },
+
+//     swap: function (currentSide, desiredSide) {
+//         settings.container.toggleClass('flip');
+
+//         currentSide.fadeOut(900);
+//         currentSide.hide();
+//         desiredSide.show();
+
+//     },
+
+//     bindUIActions: function () {
+//         settings.days.on('click', function () {
+//             instance.swap(settings.calendar, settings.form);
+//             settings.input.focus();
+//         });
+
+//         settings.buttons.on('click', function () {
+//             instance.swap(settings.form, settings.calendar);
+//         });
+//     }
+// }
+
+// app.init();
 
 
-function startTime() {
+const datePictcher = () => {
+    let dateIndex = 0;
+    // todo: fetch todays date
+    const assignedFirst = document.querySelector("#day-date");
+    const assigntSecond = document.querySelector("#month-year");
+    const date = new Date();
 
-    let cardElement = document.querySelector(".card");
+    const monthYear = `${["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()]} ${date.getFullYear()}`;
+    const dayDate = `${["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()]} ${date.getDate()}th`;
+    assignedFirst.innerHTML = dayDate;
+    assigntSecond.innerHTML = monthYear;
 
-    cardElement.addEventListener("click", flip);
-
-    function flip() {
-        cardElement.classList.toggle("flipped")
-    }
-    var weekday = new Array();
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-    var month = new Array();
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    var d = today.getDate();
-    var y = today.getFullYear();
-    var wd = weekday[today.getDay()];
-    var mt = month[today.getMonth()];
-
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('date').innerHTML =
-        d;
-    document.getElementById('day').innerHTML =
-        wd;
-    document.getElementById('month').innerHTML =
-        mt + "/" + y;
-
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) { i = "0" + i };
-    return i;
+    currentMonthDays();
 }
 
 
+const currentMonthDays = () => {
+    const date = new Date();
+    const numberOfDaysInMonth = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+    const startOfDayInMonth = new Date(date.getFullYear(), date.getMonth(), 1);
+    const numberOfDaysInPreviusMonthsToShow = date.getDay();
+    console.log(numberOfDaysInPreviusMonthsToShow);
+    const endOfDayInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 
-document.addEventListener('DOMContentLoaded', startTime, false);
+
+
+}
+
+
+datePictcher()
