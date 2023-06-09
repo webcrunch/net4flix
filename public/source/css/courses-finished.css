@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+
 }
 
 .navbar {
@@ -65,15 +66,20 @@ content {
 }
 
 .sidebar{
-    width: 50vh;
+    width: 31vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 
 .chapters {
 display: flex;
 flex-direction: column;
 width: 25vh;
+
 margin-left: 0vh;
 font-size: 2.2vh;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -86,6 +92,7 @@ margin-bottom: 0;
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+
 }
 
 .chapter-title{
@@ -121,7 +128,7 @@ margin-bottom: 0;
 
 .triangle{
     position: absolute;
-    transform: translateY(0%) rotate(-90deg);
+    transform: rotate(0deg);
     width: 0vh;
     height: 0vh;
     margin-left: -1vh;
@@ -131,20 +138,19 @@ margin-bottom: 0;
     border-top: 10px solid rgb(0, 0, 0);
 }
 
-.triangle:hover{
-    
+.rotated{
     transform: rotate(-90deg);
-   
 }
 
 .lessons {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
     background-color: rgb(51, 51, 51);
     border: solid 1px black;
+    text-align: center;
     
 }
 

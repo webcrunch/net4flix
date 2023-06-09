@@ -5,12 +5,12 @@ const chapters = JSON.parse(localStorage.getItem("chapters"))
 const chapterFocused = localStorage.getItem("courseClicked");
 const progress = JSON.parse(localStorage.getItem("progress"));
 const populateData = () => {
-    /*  document.querySelector('.titleCourse').innerHTML = `Courses for ${chapterFocused}`
-     document.querySelector('h2').innerHTML = `User: ${user.first_name}  ${user.last_name}`; */
+   /*    document.querySelector('.titleCourse').innerHTML = `Courses for ${chapterFocused}`
+     document.querySelector('h2').innerHTML = `User: ${user.first_name}  ${user.last_name}`;  */
     /* document.querySelector('h3').innerHTML = `Email: ${user.email}`; */
     // document.querySelector('.user_name').innerHTML = ` Log out: ${user.first_name} `;
     // document.querySelector('.user_name').addEventListener("click", logout())
-    let h1 = document.querySelector("h1");
+  /*   let h1 = document.querySelector("h1");
     let h2 = document.querySelector("h2");
     let h3 = document.querySelector("h3");
 
@@ -27,17 +27,17 @@ const populateData = () => {
     content.appendChild(userInfo);
     userInfo.appendChild(h1);
     userInfo.appendChild(h2);
-    userInfo.appendChild(h3);
+    userInfo.appendChild(h3); */
+
+}
 
 
-
-
-
+/* 
     let userProgress = progress.filter(prog => user.id === prog.id)
 
     userProgress = userProgress[0];
 
-     /*  chapters.filter(chapt => chapt.course === chapterFocused).forEach(chapt => {
+       chapters.filter(chapt => chapt.course === chapterFocused).forEach(chapt => {
 
 
         let chapterDiv = document.createElement("div");
@@ -77,7 +77,7 @@ const populateData = () => {
         })
     })
     
-}  */
+}  
 
 const logout = () => {
     localStorage.setItem("session", null);
@@ -88,3 +88,16 @@ const logout = () => {
 
 
 document.addEventListener('DOMContentLoaded', populateData, false);
+ */
+
+function toggleContent(element) {
+    var lessons = element.nextElementSibling;
+    var triangle = element.getElementsByClassName("triangle")[0];
+    if (lessons.style.display === "none") {
+      lessons.style.display = "block";
+      triangle.classList.remove("rotated");
+    } else {
+      lessons.style.display = "none";
+      triangle.classList.add("rotated");
+    }
+  }
