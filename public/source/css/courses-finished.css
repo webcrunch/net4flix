@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-
+    background-color: #000000;
 }
 
 .navbar {
@@ -16,7 +16,6 @@ body {
     height: 100%;
     margin-bottom: 1;
     padding: 0;
-
 }
 
 .navbar li {
@@ -72,14 +71,14 @@ content {
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
-
 }
+
+
 
 .chapters {
 display: flex;
 flex-direction: column;
 width: 25vh;
-
 margin-left: 0vh;
 font-size: 2.2vh;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -99,7 +98,7 @@ margin-bottom: 0;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 99%;
     height: 4vh;
     display: flex;
     font-weight: bold;
@@ -113,7 +112,10 @@ margin-bottom: 0;
     padding: 1.5vh;
     border-bottom-right-radius: 1vh;
     text-align: center;
+    cursor: pointer;
 }
+
+
 
 .chapter-title-name{
     position: absolute;
@@ -149,7 +151,6 @@ margin-bottom: 0;
     flex-direction: column;
     word-wrap: break-word;
     background-color: rgb(51, 51, 51);
-    border: solid 1px black;
     text-align: center;
     
 }
