@@ -1,6 +1,4 @@
 
-const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
-
 const handligTodos = async () => {
     let todoA = await fetchTodoData();
     displayList(todoA)

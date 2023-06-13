@@ -30,6 +30,12 @@ const checkForTodos = async (day, date) => {
 }
 
 
+const displayTodo = () => {
+    const todoContainer = document.querySelector(".calendarTodo");
+    const cssTodo = window.getComputedStyle(todoContainer);
+    cssTodo.getPropertyValue("display") === 'none' ? todoContainer.style.display = 'block' : todoContainer.style.display = 'none';
+}
+
 const currentMonthDays = (date, currentMonth) => {
     const timeold = [];
     const time1 = [];
@@ -92,7 +98,7 @@ const currentMonthDays = (date, currentMonth) => {
 
     timeold.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.classList.add("last-month");
         span.innerHTML = time;
@@ -100,7 +106,7 @@ const currentMonthDays = (date, currentMonth) => {
     })
     time1.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
@@ -108,9 +114,9 @@ const currentMonthDays = (date, currentMonth) => {
 
     time2.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
 
         span.innerHTML = time;
@@ -119,14 +125,14 @@ const currentMonthDays = (date, currentMonth) => {
 
     time3.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
         let span2 = document.createElement("span");
         let a = await checkForTodos(time, date);
         // span2.classList.add("test")
         span2.innerHTML = 1;
         if (currentMonth && time === currentDate) span.classList.add("active");
-        // span.classList.add("numberCircle")
+        // span.classList.add("todoCircle")
         span.innerHTML = time;
         // span.appendChild(span2);
         getThirdWeek.appendChild(span);
@@ -134,7 +140,7 @@ const currentMonthDays = (date, currentMonth) => {
 
     time4.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFourthWeek.appendChild(span);
@@ -142,7 +148,7 @@ const currentMonthDays = (date, currentMonth) => {
 
     time5.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFifthWeek.appendChild(span);
@@ -150,7 +156,7 @@ const currentMonthDays = (date, currentMonth) => {
 
     timesnew.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
         span.classList.add("last-month");
         span.innerHTML = time;
         getFifthWeek.appendChild(span);
@@ -176,6 +182,7 @@ const getPostMonth = e => {
 
 const monthButtons = () => {
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
+    document.querySelector("#newTodo").addEventListener('click', displayTodo, 0)
     // document.querySelector("#postMonth").addEventListener('click', getPostMonth, 0)
 }
 
