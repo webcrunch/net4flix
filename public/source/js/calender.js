@@ -1,57 +1,32 @@
-// var app = {
-//     settings: {
-//         container: $('.calendar'),
-//         calendar: $('.front'),
-//         days: $('.weeks span'),
-//         form: $('.back'),
-//         input: $('.back input'),
-//         buttons: $('.back button')
-//     },
-
-//     init: function () {
-//         instance = this;
-//         settings = this.settings;
-//         this.bindUIActions();
-//     },
-
-//     swap: function (currentSide, desiredSide) {
-//         settings.container.toggleClass('flip');
-
-//         currentSide.fadeOut(900);
-//         currentSide.hide();
-//         desiredSide.show();
-
-//     },
-
-//     bindUIActions: function () {
-//         settings.days.on('click', function () {
-//             instance.swap(settings.calendar, settings.form);
-//             settings.input.focus();
-//         });
-
-//         settings.buttons.on('click', function () {
-//             instance.swap(settings.form, settings.calendar);
-//         });
-//     }
-// }
-
-// app.init();
-
-
-const datePictcher = () => {
-    let dateIndex = 0;
-    // todo: fetch todays date
+const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
+let yearIndex = 0;
+let monthIndex = 0;
+const displayCurrentDate = date => {
+    const dayDate = `${["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()]} ${date.getDate()}th`;
     const assignedFirst = document.querySelector("#day-date");
+    assignedFirst.innerHTML = dayDate;
+}
+
+const init = () => {
+    displayCurrentDate(new Date());
+    datePictcher(new Date(), true)
+}
+
+const datePictcher = (date, thisMonth) => {
     const assigntSecond = document.querySelector("#month-year");
-    const date = new Date();
 
     const monthYear = `${["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()]} ${date.getFullYear()}`;
-    const dayDate = `${["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()]} ${date.getDate()}th`;
-    assignedFirst.innerHTML = dayDate;
     assigntSecond.innerHTML = monthYear;
 
-    currentMonthDays(date, true);
+    currentMonthDays(date, thisMonth);
     monthButtons();
+}
+
+const checkForTodos = async (day, date) => {
+    let todoA = await fetchTodoData();
+    let checkDate = new Date(date.getFullYear(), date.getMonth(), day).toDateString()
+    let checkForTodos = todoA.filter(td => new Date(td.date).toDateString() === checkDate);
+    return checkForTodos.length > 0 ? true : false;
 }
 
 
@@ -115,45 +90,67 @@ const currentMonthDays = (date, currentMonth) => {
 
 
 
-    timeold.forEach(time => {
+    timeold.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
         span.classList.add("last-month");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
     })
-    time1.forEach(time => {
+    time1.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
     })
 
-    time2.forEach(time => {
+    time2.forEach(async time => {
         let span = document.createElement("span");
-        if (time === currentDate && currentDate) span.classList.add("active");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
+
         span.innerHTML = time;
         getSecondWeek.appendChild(span);
     })
 
-    time3.forEach(time => {
+    time3.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
+        let span2 = document.createElement("span");
+        let a = await checkForTodos(time, date);
+        // span2.classList.add("test")
+        span2.innerHTML = 1;
+        if (currentMonth && time === currentDate) span.classList.add("active");
+        // span.classList.add("numberCircle")
         span.innerHTML = time;
+        // span.appendChild(span2);
         getThirdWeek.appendChild(span);
     })
 
-    time4.forEach(time => {
+    time4.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFourthWeek.appendChild(span);
     })
 
-    time5.forEach(time => {
+    time5.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
+        if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFifthWeek.appendChild(span);
     })
 
-    timesnew.forEach(time => {
+    timesnew.forEach(async time => {
         let span = document.createElement("span");
+        if (await checkForTodos(time, date) == true) span.classList.add("numberCircle")
         span.classList.add("last-month");
         span.innerHTML = time;
         getFifthWeek.appendChild(span);
@@ -164,7 +161,13 @@ const currentMonthDays = (date, currentMonth) => {
 }
 
 const getPrevMonth = e => {
-    currentMonthDays(new Date("2023-05-09"), false);
+    monthIndex--;
+    console.log(monthIndex);
+    // datePictcher(new Date(new Date().getFullYear, new Date().getMonth), false);
+    let year = new Date().getFullYear();
+    let month = new Date().getMonth();
+    console.log(monthIndex - month, month);
+    //datePictcher(new Date(year - yearIndex, month - monthIndex, 1), false)
 }
 
 const getPostMonth = e => {
@@ -173,10 +176,10 @@ const getPostMonth = e => {
 
 const monthButtons = () => {
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
-    document.querySelector("#postMonth").addEventListener('click', getPostMonth, 0)
+    // document.querySelector("#postMonth").addEventListener('click', getPostMonth, 0)
 }
 
 
 
 
-datePictcher()
+document.addEventListener('DOMContentLoaded', init, false);
