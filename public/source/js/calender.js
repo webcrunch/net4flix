@@ -20,19 +20,31 @@ const datePictcher = (date, thisMonth) => {
 
     currentMonthDays(date, thisMonth);
     monthButtons();
+
 }
+
+// const lengthOfTodos = async (day, date) => {
+//     let todoA = await fetchTodoData();
+//     let checkDate = new Date(date.getFullYear(), date.getMonth(), day).toDateString()
+//     let checkForTodos = todoA.filter(td => new Date(td.date).toDateString() === checkDate);
+//     return checkForTodos.length;
+// }
 
 const checkForTodos = async (day, date) => {
     let todoA = await fetchTodoData();
     let checkDate = new Date(date.getFullYear(), date.getMonth(), day).toDateString()
     let checkForTodos = todoA.filter(td => new Date(td.date).toDateString() === checkDate);
-    return checkForTodos.length > 0 ? true : false;
+    return {
+        status: checkForTodos.length > 0 ? true : false,
+        length: checkForTodos.length
+    }
 }
 
 
 const displayTodo = () => {
     const todoContainer = document.querySelector(".calendarTodo");
     const cssTodo = window.getComputedStyle(todoContainer);
+    cssTodo.getPropertyValue("display") === 'block' ? document.querySelector("#newTodo").innerHTML = "new todo" : document.querySelector("#newTodo").innerHTML = "close"
     cssTodo.getPropertyValue("display") === 'none' ? todoContainer.style.display = 'block' : todoContainer.style.display = 'none';
 }
 
@@ -98,81 +110,158 @@ const currentMonthDays = (date, currentMonth) => {
 
     timeold.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        let badgeSpan = document.createElement("span");
         span.classList.add("last-month");
+        span.classList.add("date");
+
+        if (await checkForTodos(time, date).status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerText = "1";
+            badgeSpan.classList.add("stina");
+            span.appendChild(badgeSpan);
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
     })
+    // time1.forEach(async time => {
+
+    //     let span = document.createElement("span");
+    //     let badgeSpan = document.createElement("span");
+    //     span.innerText = time;
+    //     span.classList.add("date");
+    //     badgeSpan.classList.add("stina")
+    //     if (await checkForTodos(time, date) == true) {
+    //         badgeSpan.innerHTML = await lengthOfTodos(time, date)
+    //         span.appendChild(badgeSpan);
+    //         span.classList.add("todoCircle")
+    //     }
+    //     if (currentMonth && time === currentDate) span.classList.add("active");
+
+    //     getFirstWeek.appendChild(span);
+    // })
     time1.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
+
         getFirstWeek.appendChild(span);
     })
 
     time2.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
-
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         getSecondWeek.appendChild(span);
     })
 
     time3.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
-        let span2 = document.createElement("span");
-        let a = await checkForTodos(time, date);
-        // span2.classList.add("test")
-        span2.innerHTML = 1;
-        if (currentMonth && time === currentDate) span.classList.add("active");
-        // span.classList.add("todoCircle")
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
-        // span.appendChild(span2);
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         getThirdWeek.appendChild(span);
     })
 
     time4.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         getFourthWeek.appendChild(span);
     })
 
     time5.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         getFifthWeek.appendChild(span);
     })
 
     timesnew.forEach(async time => {
         let span = document.createElement("span");
-        if (await checkForTodos(time, date) == true) span.classList.add("todoCircle")
-        span.classList.add("last-month");
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
         span.innerHTML = time;
+        let todoshandling = await checkForTodos(time, date)
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        if (currentMonth && time === currentDate) span.classList.add("active");
         getFifthWeek.appendChild(span);
     })
 
-
-
 }
+
+// const test = e => {
+//     console.log(e);
+// }
 
 const getPrevMonth = e => {
     monthIndex--;
-    console.log(monthIndex);
+    // console.log(monthIndex);
     // datePictcher(new Date(new Date().getFullYear, new Date().getMonth), false);
     let year = new Date().getFullYear();
     let month = new Date().getMonth();
-    console.log(monthIndex - month, month);
+    // console.log(monthIndex - month, month);
     //datePictcher(new Date(year - yearIndex, month - monthIndex, 1), false)
 }
 
