@@ -1,0 +1,71 @@
+
+.dev img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    height: 20%;
+    margin-top: 5%;
+    align-items: center;
+  
+  }
+ 
+  .chapter {
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  
+  .text1 {
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  .agile {
+    margin-top: 5px;
+    align-items: center;
+  }
+  
+  .text2 {
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .kanban {
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .info {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imageFrame {
+    align-items: center;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+.image1 {
+    width: 100%;
+    height: auto;
+}
+.book {
+  margin-left: 80%;
+}
+
+.rightSide {
+  width: 50%;
+  float: right;
+
+}
+
+.leftSide {
+  width: 50%;
+  float: left;
+}
