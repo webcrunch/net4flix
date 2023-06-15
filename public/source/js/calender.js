@@ -1,6 +1,7 @@
 const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
 let yearIndex = 0;
 let monthIndex = 0;
+let dateFortodos;
 const displayCurrentDate = date => {
     const dayDate = `${["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"][date.getDay()]} ${date.getDate()}th`;
     const assignedFirst = document.querySelector("#day-date");
@@ -57,6 +58,7 @@ const currentMonthDays = (date, currentMonth) => {
     const time5 = [];
     const timesnew = [];
     const currentDate = date.getDate();
+    dateFortodos = date;
     const getFirstWeek = document.querySelector(".first");
     const getSecondWeek = document.querySelector(".second");
     const getThirdWeek = document.querySelector(".third");
@@ -84,12 +86,13 @@ const currentMonthDays = (date, currentMonth) => {
         time1.push(i);
     }
 
-    for (let i = numberofSecondWeek; i <= numberofSecondWeek + 7; i++) {
+
+    for (let i = numberofSecondWeek; i <= numberofSecondWeek + 6; i++) {
         time2.push(i);
     }
 
 
-    for (let i = numberofSecondWeek + 7; i <= numberofSecondWeek + 7 * 2; i++) {
+    for (let i = numberofSecondWeek + 7; i <= numberofSecondWeek + 7 + 6; i++) {
         time3.push(i);
     }
 
@@ -112,38 +115,23 @@ const currentMonthDays = (date, currentMonth) => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("span");
         span.classList.add("last-month");
-        span.classList.add("date");
-
+        // span.classList.add("date");
         if (await checkForTodos(time, date).status == true) {
             span.classList.add("todoCircle")
             badgeSpan.innerText = "1";
-            badgeSpan.classList.add("stina");
+            badgeSpan.classList.add("badge");
             span.appendChild(badgeSpan);
         }
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
     })
-    // time1.forEach(async time => {
-
-    //     let span = document.createElement("span");
-    //     let badgeSpan = document.createElement("span");
-    //     span.innerText = time;
-    //     span.classList.add("date");
-    //     badgeSpan.classList.add("stina")
-    //     if (await checkForTodos(time, date) == true) {
-    //         badgeSpan.innerHTML = await lengthOfTodos(time, date)
-    //         span.appendChild(badgeSpan);
-    //         span.classList.add("todoCircle")
-    //     }
-    //     if (currentMonth && time === currentDate) span.classList.add("active");
-
-    //     getFirstWeek.appendChild(span);
-    // })
     time1.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
         badgeSpan.classList.add("badge")
+        span.classList.add("date");
+        span.setAttribute("id", time);
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -162,7 +150,9 @@ const currentMonthDays = (date, currentMonth) => {
     time2.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
-        badgeSpan.classList.add("badge")
+        badgeSpan.classList.add("badge");
+        span.classList.add("date");
+        span.setAttribute("id", time);
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -180,7 +170,9 @@ const currentMonthDays = (date, currentMonth) => {
     time3.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
-        badgeSpan.classList.add("badge")
+        badgeSpan.classList.add("badge");
+        span.classList.add("date");
+        span.setAttribute("id", time);
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -198,7 +190,9 @@ const currentMonthDays = (date, currentMonth) => {
     time4.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
-        badgeSpan.classList.add("badge")
+        badgeSpan.classList.add("badge");
+        span.classList.add("date");
+        span.setAttribute("id", time);
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -216,7 +210,9 @@ const currentMonthDays = (date, currentMonth) => {
     time5.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
-        badgeSpan.classList.add("badge")
+        badgeSpan.classList.add("badge");
+        span.classList.add("date");
+        span.setAttribute("id", time);
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -235,6 +231,7 @@ const currentMonthDays = (date, currentMonth) => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
         badgeSpan.classList.add("badge")
+        span.classList.add("last-month");
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
         if (todoshandling.status == true) {
@@ -251,18 +248,30 @@ const currentMonthDays = (date, currentMonth) => {
 
 }
 
-// const test = e => {
-//     console.log(e);
-// }
+
+const getTodos = e => {
+    const todoContainer = document.querySelector(".calendarTodo");
+    const cssTodo = window.getComputedStyle(todoContainer);
+    document.querySelector("#newTodo").innerHTML = "close"
+    todoContainer.style.display = 'block';
+    if (e.target.classList.contains("todoCircle")) {
+        showtodos(e.target.id, dateFortodos)
+    } else {
+        addNewtodo(e.target.id, dateFortodos)
+    }
+}//
+
 
 const getPrevMonth = e => {
+
     monthIndex--;
     // console.log(monthIndex);
     // datePictcher(new Date(new Date().getFullYear, new Date().getMonth), false);
     let year = new Date().getFullYear();
     let month = new Date().getMonth();
-    // console.log(monthIndex - month, month);
-    //datePictcher(new Date(year - yearIndex, month - monthIndex, 1), false)
+    // console.log(year, month, monthIndex);
+    // console.log(new Date(year, 1));
+    // datePictcher(new Date(year, month, 1), false)
 }
 
 const getPostMonth = e => {
@@ -270,8 +279,10 @@ const getPostMonth = e => {
 }
 
 const monthButtons = () => {
+    setTimeout(() => { document.querySelectorAll(".date").forEach(box => box.addEventListener('click', getTodos, 0)); }, 1000);
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
     document.querySelector("#newTodo").addEventListener('click', displayTodo, 0)
+
     // document.querySelector("#postMonth").addEventListener('click', getPostMonth, 0)
 }
 

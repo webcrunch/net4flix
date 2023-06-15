@@ -50,6 +50,7 @@ body {
     transition: .9s;
     transform-style: preserve-3d;
     width: 100%;
+    padding: 2vh;
     display: none;
 }
 
