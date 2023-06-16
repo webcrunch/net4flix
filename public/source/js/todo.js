@@ -26,6 +26,7 @@ const handligTodos = async () => {
         addButton.style.display = 'block';
         editButton.style.display = 'none';
         handligTodos();
+        newDrawCalender();
     });
 
     document.querySelector('.addBtn').addEventListener("click", function (e) {
@@ -40,9 +41,12 @@ const handligTodos = async () => {
         };
         todoA.push(todo)
         localStorage.setItem("todos", JSON.stringify(todoA));
+        let todoList = todoA.filter(td => td.date === date.value);
         input.value = null;
         date.value = null;
         handligTodos();
+        // displayList(todoList);
+        newDrawCalender();
     });
 }
 

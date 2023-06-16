@@ -17,7 +17,6 @@ const datePictcher = (date, thisMonth) => {
 
     const monthYear = `${["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][date.getMonth()]} ${date.getFullYear()}`;
     assigntSecond.innerHTML = monthYear;
-
     currentMonthDays(date, thisMonth);
     monthButtons();
 
