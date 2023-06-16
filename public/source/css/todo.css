@@ -134,3 +134,8 @@ content .chapters {
     cursor: pointer;
     display: none;
 }
+
+#myUL {
+    margin-top: 0.6vh;
+    color: #ffffff
+}
