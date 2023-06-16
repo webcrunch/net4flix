@@ -1,4 +1,3 @@
-const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
 let yearIndex = 0;
 let monthIndex = 0;
 let dateFortodos;
@@ -24,12 +23,6 @@ const datePictcher = (date, thisMonth) => {
 
 }
 
-// const lengthOfTodos = async (day, date) => {
-//     let todoA = await fetchTodoData();
-//     let checkDate = new Date(date.getFullYear(), date.getMonth(), day).toDateString()
-//     let checkForTodos = todoA.filter(td => new Date(td.date).toDateString() === checkDate);
-//     return checkForTodos.length;
-// }
 
 const checkForTodos = async (day, date) => {
     let todoA = await fetchTodoData();
@@ -262,6 +255,10 @@ const getTodos = e => {
 }//
 
 
+const newDrawCalender = () => {
+    datePictcher(dateFortodos, true);
+}
+
 const getPrevMonth = e => {
 
     monthIndex--;
@@ -274,7 +271,7 @@ const getPrevMonth = e => {
     // datePictcher(new Date(year, month, 1), false)
 }
 
-const getPostMonth = e => {
+const getNextMonth = e => {
     console.log(e);
 }
 
@@ -283,7 +280,7 @@ const monthButtons = () => {
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
     document.querySelector("#newTodo").addEventListener('click', displayTodo, 0)
 
-    // document.querySelector("#postMonth").addEventListener('click', getPostMonth, 0)
+    // document.querySelector("#postMonth").addEventListener('click', getNextMonth, 0)
 }
 
 
