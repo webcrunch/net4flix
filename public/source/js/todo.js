@@ -1,57 +1,52 @@
 
+const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
+
 const handligTodos = async () => {
     let todoA = await fetchTodoData();
     const myNodelist = document.getElementsByTagName("myUL");
 
-
     document.querySelector('.updateBtn').addEventListener("click", function (e) {
-
-
+        e.preventDefault();
+        const close = document.querySelector('.editClose');
+        const hidden = document.querySelector("#postId");
+        let input = document.querySelector("#myInput").value;
+        let date = document.querySelector("#date").value;
+        const id = +hidden.value;
+        const post = todoA.find(todo => todo.id === id);
+        post.task = input;
+        post.date = date;
+        todoA[id] = post;
+        localStorage.setItem("todos", JSON.stringify(todoA));
+        close.style.display = 'none';
+        hidden.value = null;
+        document.querySelector('#myInput').value = null;
+        document.querySelector('#date').value = null;
+        const addButton = document.querySelector('.addBtn');
+        const editButton = document.querySelector('.updateBtn')
+        addButton.style.display = 'block';
+        editButton.style.display = 'none';
+        handligTodos();
     });
-    // 
-    // displayList(todoA)
-    // 
-    // document.querySelector('.updateBtn').addEventListener("click", function (e) {
-    //     e.preventDefault();
-    //     const close = document.querySelector('.editClose');
-    //     const hidden = document.querySelector("#postId");
-    //     let input = document.querySelector("#myInput").value;
-    //     let date = document.querySelector("#date").value;
-    //     const id = +hidden.value;
-    //     const post = todoA.find(todo => todo.id === id);
-    //     post.task = input;
-    //     post.date = date;
-    //     todoA[id] = post;
-    //     localStorage.setItem("todos", JSON.stringify(todoA));
-    //     close.style.display = 'none';
-    //     hidden.value = null;
-    //     document.querySelector('#myInput').value = null;
-    //     document.querySelector('#date').value = null;
-    //     const addButton = document.querySelector('.addBtn');
-    //     const editButton = document.querySelector('.updateBtn')
-    //     addButton.style.display = 'block';
-    //     editButton.style.display = 'none';
-    //     handligTodos();
-    // });
 
-    // document.querySelector('.addBtn').addEventListener("click", function (e) {
-    //     e.preventDefault();
-    //     let input = document.querySelector("#myInput");
-    //     let date = document.querySelector("#date");
-    //     if (input.value.trim().length < 1 || date.value.trim().length < 1) return alert("error")
-    //     let todo = {
-    //         id: todoA.length,
-    //         task: input.value,
-    //         date: date.value
-    //     };
-    //     todoA.push(todo)
-    //     localStorage.setItem("todos", JSON.stringify(todoA));
-    //     input.value = null;
-    //     date.value = null;
-    //     displayList(todoA);
-    //     handligTodos();
-    // });
+    document.querySelector('.addBtn').addEventListener("click", function (e) {
+        e.preventDefault();
+        let input = document.querySelector("#myInput");
+        let date = document.querySelector("#date");
+        if (input.value.trim().length < 1 || date.value.trim().length < 1) return alert("error")
+        let todo = {
+            id: todoA.length,
+            task: input.value,
+            date: date.value
+        };
+        todoA.push(todo)
+        localStorage.setItem("todos", JSON.stringify(todoA));
+        input.value = null;
+        date.value = null;
+        handligTodos();
+    });
 }
+
+
 
 
 const removePost = async id => {
@@ -61,15 +56,21 @@ const removePost = async id => {
 }
 
 const addNewtodo = async (day, date) => {
-
-    document.querySelector("#date").value = `${date.getFullYear()}-${date.getMonth() > 9 ? date.getMonth() : "0" + date.getMonth()}-${day > 9 ? day : "0" + day}`
+    let first_ul = document.querySelector('#myUL');
+    first_ul.replaceChildren();
+    let rightMonth = date.getMonth() + 1;
+    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
 }
 
 const showtodos = async (day, date) => {
+    const rightMonth = date.getMonth() + 1;
+    const checkDate = `${date.getFullYear()
+        }-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
     let todoA = await fetchTodoData();
-    // let checkDate = new Date(date.getFullYear(), date.getMonth(), day).toDateString()
-    // let checkForTodos = todoA.filter(td => new Date(td.date).toDateString() === checkDate);
-    console.log("show>Todos", date);
+    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
+
+    let checkForTodos = todoA.filter(td => td.date === checkDate);
+    displayList(checkForTodos);
 }
 
 const editPost = async id => {
