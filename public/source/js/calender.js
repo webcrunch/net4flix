@@ -292,7 +292,7 @@ const getNextMonth = e => {
 
 const todaysDate = () => {
     monthIndex = 0;
-    datePictcher(new Date(), false)
+    datePictcher(new Date(), true)
 }
 
 const monthButtons = () => {
