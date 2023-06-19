@@ -19,13 +19,18 @@ const handligTodos = async () => {
         localStorage.setItem("todos", JSON.stringify(todoA));
         close.style.display = 'none';
         hidden.value = null;
-        document.querySelector('#myInput').value = null;
-        document.querySelector('#date').value = null;
-        const addButton = document.querySelector('.addBtn');
-        const editButton = document.querySelector('.updateBtn')
-        addButton.style.display = 'block';
-        editButton.style.display = 'none';
-        handligTodos();
+        let todoList = todoA.filter(td => td.date == date);
+        // document.querySelector('#myInput').value = null;
+        // document.querySelector('#date').value = null;
+        // const addButton = document.querySelector('.addBtn');
+        // const editButton = document.querySelector('.updateBtn')
+        // addButton.style.display = 'block';
+        // editButton.style.display = 'none';
+        //  let todoList = todoA.filter(td => td.date === date.value);
+        // input.value = null;
+        // date.value = null;
+        // handligTodos();
+        displayList(todoList);
         newDrawCalender();
     });
 
@@ -45,7 +50,7 @@ const handligTodos = async () => {
         input.value = null;
         date.value = null;
         handligTodos();
-        // displayList(todoList);
+        displayList(todoList);
         newDrawCalender();
     });
 }
@@ -60,18 +65,20 @@ const removePost = async id => {
 }
 
 const addNewtodo = async (day, date) => {
+    console.log(day, date);
     let first_ul = document.querySelector('#myUL');
     first_ul.replaceChildren();
     let rightMonth = date.getMonth() + 1;
-    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
+    console.log(rightMonth, date.getMonth())
+    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day}`
 }
 
 const showtodos = async (day, date) => {
     const rightMonth = date.getMonth() + 1;
     const checkDate = `${date.getFullYear()
-        }-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
+        }-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day}`
     let todoA = await fetchTodoData();
-    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day > 9 ? day : "0" + day}`
+    document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day}`
 
     let checkForTodos = todoA.filter(td => td.date === checkDate);
     displayList(checkForTodos);
