@@ -109,7 +109,10 @@ const currentMonthDays = (date, currentMonth) => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("span");
         span.classList.add("last-month");
-        // span.classList.add("date");
+        let year = new Date().getFullYear();
+        let month = new Date().getMonth();
+        let newMonth = month - 1;
+        let todoshandling = await checkForTodos(time, new Date(year, newMonth, time))
         if (await checkForTodos(time, date).status == true) {
             span.classList.add("todoCircle")
             badgeSpan.innerText = "1";
@@ -227,15 +230,20 @@ const currentMonthDays = (date, currentMonth) => {
         badgeSpan.classList.add("badge")
         span.classList.add("last-month");
         span.innerHTML = time;
-        let todoshandling = await checkForTodos(time, date)
-        // if (todoshandling.status == true) {
-        //     span.classList.add("todoCircle")
-        //     badgeSpan.innerHTML = todoshandling.length;
-        //     span.appendChild(badgeSpan);
-        // }
-        // else {
-        //     span.innerHTML = time;
-        // }
+        let year = new Date().getFullYear();
+        let month = new Date().getMonth();
+        let newMonth = month + 1;
+
+        let todoshandling = await checkForTodos(time, new Date(year, newMonth, time))
+
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
         if (currentMonth && time === currentDate) span.classList.add("active");
         getFifthWeek.appendChild(span);
     })
