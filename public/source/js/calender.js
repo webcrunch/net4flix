@@ -42,6 +42,7 @@ const displayTodo = () => {
 }
 
 const currentMonthDays = (date, currentMonth) => {
+    dateFortodos = date; // global valriable for the curent date;
     const timeold = [];
     const time1 = [];
     const time2 = [];
@@ -49,20 +50,20 @@ const currentMonthDays = (date, currentMonth) => {
     const time4 = [];
     const time5 = [];
     const timesnew = [];
-    const currentDate = date.getDate();
-    dateFortodos = date;
     const getFirstWeek = document.querySelector(".first");
     const getSecondWeek = document.querySelector(".second");
     const getThirdWeek = document.querySelector(".third");
     const getFourthWeek = document.querySelector(".fourth");
     const getFifthWeek = document.querySelector(".fifth");
     const previusMonth = new Date(date.getFullYear(), date.getMonth(), 0);
-    const previousLastDayInMonth = previusMonth.getDate();
-    const numberOfDaysInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-    const startOfDayInMonth = new Date(date.getFullYear(), date.getMonth(), 1);
-    const numberOfDaysInPreviusMonthsToShow = ["Sunday", "Saturday", "Friday", "Thursday", "Wednesday", "Tuesday", "Monday"].indexOf(["Sunday", "Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Saturday"][startOfDayInMonth.getDay()]) // how many day this week has with previus month
+    const currentDate = date.getDate();
+    const previousLastNumberOfdayDayInMonth = previusMonth.getDate();
+    const numberOfDaysInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate(); // gives the current months total days 
+    const startOfDayInMonth = new Date(date.getFullYear(), date.getMonth(), numberOfDaysInMonth);
+    const numberOfDaysInPreviusMonthsToShow = ["Sunday", "Saturday", "Friday", "Thursday", "Wednesday", "Tuesday", "Monday"].indexOf(["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][previusMonth.getDay()]) // how many day this week has with previus month
     const endOfDayInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0); // end of this month day;
-    const numberOfDaysFirstWeekThisMonth = 7 - numberOfDaysInPreviusMonthsToShow; // how many days this week has with current month
+    const numberOfDaysFirstWeekThisMonthFromPrevMonth = numberOfDaysInPreviusMonthsToShow < 1 ? numberOfDaysInPreviusMonthsToShow : 7 - numberOfDaysInPreviusMonthsToShow; // how many days this week has with current month
+    const numberOfDaysFirstWeekThisMonth = 7 - numberOfDaysFirstWeekThisMonthFromPrevMonth;
     const numberofSecondWeek = numberOfDaysFirstWeekThisMonth + 1;
     // add all previus dates
     getFirstWeek.replaceChildren();
@@ -70,7 +71,8 @@ const currentMonthDays = (date, currentMonth) => {
     getThirdWeek.replaceChildren();
     getFourthWeek.replaceChildren();
     getFifthWeek.replaceChildren();
-    for (let i = previousLastDayInMonth; i > previousLastDayInMonth - numberOfDaysInPreviusMonthsToShow; i--) {
+
+    for (let i = previousLastNumberOfdayDayInMonth - previusMonth.getDay() + 1; i <= previousLastNumberOfdayDayInMonth; i++) {
         timeold.push(i)
     }
 
@@ -226,14 +228,14 @@ const currentMonthDays = (date, currentMonth) => {
         span.classList.add("last-month");
         span.innerHTML = time;
         let todoshandling = await checkForTodos(time, date)
-        if (todoshandling.status == true) {
-            span.classList.add("todoCircle")
-            badgeSpan.innerHTML = todoshandling.length;
-            span.appendChild(badgeSpan);
-        }
-        else {
-            span.innerHTML = time;
-        }
+        // if (todoshandling.status == true) {
+        //     span.classList.add("todoCircle")
+        //     badgeSpan.innerHTML = todoshandling.length;
+        //     span.appendChild(badgeSpan);
+        // }
+        // else {
+        //     span.innerHTML = time;
+        // }
         if (currentMonth && time === currentDate) span.classList.add("active");
         getFifthWeek.appendChild(span);
     })
@@ -259,19 +261,22 @@ const newDrawCalender = () => {
 }
 
 const getPrevMonth = e => {
-
     monthIndex--;
-    // console.log(monthIndex);
-    // datePictcher(new Date(new Date().getFullYear, new Date().getMonth), false);
     let year = new Date().getFullYear();
     let month = new Date().getMonth();
-    // console.log(year, month, monthIndex);
-    // console.log(new Date(year, 1));
-    // datePictcher(new Date(year, month, 1), false)
+
+    let negToPos = monthIndex * -1;
+    let newMonth = month - negToPos;
+
+    datePictcher(new Date(year, newMonth, 1), false)
 }
 
 const getNextMonth = e => {
-    console.log(e);
+    monthIndex++;
+    let year = new Date().getFullYear();
+    let month = new Date().getMonth();
+    let newMonth = month + monthIndex;
+    datePictcher(new Date(year, newMonth, 1), false)
 }
 
 const monthButtons = () => {
@@ -279,7 +284,7 @@ const monthButtons = () => {
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
     document.querySelector("#newTodo").addEventListener('click', displayTodo, 0)
 
-    // document.querySelector("#postMonth").addEventListener('click', getNextMonth, 0)
+    document.querySelector("#postMonth").addEventListener('click', getNextMonth, 0)
 }
 
 
