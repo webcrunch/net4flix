@@ -77,12 +77,12 @@ const currentMonthDays = (date, currentMonth) => {
     }
 
     for (let i = 1; i <= numberOfDaysFirstWeekThisMonth; i++) {
-        time1.push(i);
+        time1.push(`${i < 10 ? "0" + i : i}`);
     }
 
 
     for (let i = numberofSecondWeek; i <= numberofSecondWeek + 6; i++) {
-        time2.push(i);
+        time2.push(`${i < 10 ? "0" + i : i}`);
     }
 
 
@@ -290,7 +290,10 @@ const getNextMonth = e => {
     datePictcher(new Date(year, newMonth, 1), false)
 }
 
-const todaysDate = () => datePictcher(new Date(), false)
+const todaysDate = () => {
+    monthIndex = 0;
+    datePictcher(new Date(), false)
+}
 
 const monthButtons = () => {
     setTimeout(() => { document.querySelectorAll(".date").forEach(box => box.addEventListener('click', getTodos, 0)); }, 1000);

@@ -138,8 +138,8 @@ body {
 .badge {
     font-size: xx-small;
     position: relative;
-    top: -3.5vh;
-    left: 3vh;
+    top: -3.7vh;
+    left: 4vh;
 }
 
 
@@ -148,6 +148,5 @@ body {
     color: #666;
     height: 5.5vh;
     width: 6vh;
-    border-radius: 50%;
-    */
+    /* border-radius: 99%; */
 }
