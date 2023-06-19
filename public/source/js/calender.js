@@ -112,12 +112,15 @@ const currentMonthDays = (date, currentMonth) => {
         let year = new Date().getFullYear();
         let month = new Date().getMonth();
         let newMonth = month - 1;
+
         let todoshandling = await checkForTodos(time, new Date(year, newMonth, time))
-        if (await checkForTodos(time, date).status == true) {
+        if (todoshandling.status == true) {
             span.classList.add("todoCircle")
-            badgeSpan.innerText = "1";
-            badgeSpan.classList.add("badge");
+            badgeSpan.innerHTML = todoshandling.length;
             span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
         }
         if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
@@ -287,11 +290,13 @@ const getNextMonth = e => {
     datePictcher(new Date(year, newMonth, 1), false)
 }
 
+const todaysDate = () => datePictcher(new Date(), false)
+
 const monthButtons = () => {
     setTimeout(() => { document.querySelectorAll(".date").forEach(box => box.addEventListener('click', getTodos, 0)); }, 1000);
     document.querySelector("#preMonth").addEventListener('click', getPrevMonth, 0)
     document.querySelector("#newTodo").addEventListener('click', displayTodo, 0)
-
+    document.querySelector("#day-date").addEventListener('click', todaysDate, 0);
     document.querySelector("#postMonth").addEventListener('click', getNextMonth, 0)
 }
 
