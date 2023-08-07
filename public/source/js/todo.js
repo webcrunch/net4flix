@@ -61,7 +61,8 @@ const handligTodos = async () => {
 const removePost = async id => {
     let todoA = await fetchTodoData();
     localStorage.setItem("todos", JSON.stringify(todoA.filter(todo => todo.id !== id)));
-    handligTodos();
+    let todoList = await fetchTodoData();
+    displayList(todoList);
 }
 
 const addNewtodo = async (day, date) => {
