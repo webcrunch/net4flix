@@ -49,12 +49,15 @@ const currentMonthDays = (date, currentMonth) => {
     const time3 = [];
     const time4 = [];
     const time5 = [];
+    const time6 = [];
     const timesnew = [];
+    const timesnewSec = [];
     const getFirstWeek = document.querySelector(".first");
     const getSecondWeek = document.querySelector(".second");
     const getThirdWeek = document.querySelector(".third");
     const getFourthWeek = document.querySelector(".fourth");
     const getFifthWeek = document.querySelector(".fifth");
+    const getSixthWeek = document.querySelector(".sixth");
     const previusMonth = new Date(date.getFullYear(), date.getMonth(), 0);
     const currentDate = date.getDate();
     const previousLastNumberOfdayDayInMonth = previusMonth.getDate();
@@ -71,7 +74,7 @@ const currentMonthDays = (date, currentMonth) => {
     getThirdWeek.replaceChildren();
     getFourthWeek.replaceChildren();
     getFifthWeek.replaceChildren();
-
+    getSixthWeek.replaceChildren();
     for (let i = previousLastNumberOfdayDayInMonth - previusMonth.getDay() + 1; i <= previousLastNumberOfdayDayInMonth; i++) {
         timeold.push(i)
     }
@@ -96,12 +99,24 @@ const currentMonthDays = (date, currentMonth) => {
 
 
     for (let i = numberofSecondWeek + 7 + 7 * 2; i <= numberOfDaysInMonth; i++) {
-        time5.push(i);
+
+        time5.length <= 6 ? time5.push(i) : time6.push(i);
     }
 
-    for (let i = 1; i <= 7 - time5.length; i++) {
-        timesnew.push(i);
+    if (time6.length > 0) {
+        for (let i = 1; i <= 7 - time6.length; i++) {
+            timesnew.push(i);
+        }
     }
+    else {
+        for (let i = 1; i <= 7 - time5.length; i++) {
+            timesnew.push(i);
+        }
+    }
+    for (let i = timesnew.length; i <= timesnew.length + 6; i++) {
+        timesnewSec.push(i);
+    }
+
 
 
     timeold.forEach(async time => {
@@ -226,6 +241,27 @@ const currentMonthDays = (date, currentMonth) => {
         getFifthWeek.appendChild(span);
     })
 
+    if (time6.length > 0) {
+        time6.forEach(async time => {
+            let span = document.createElement("span");
+            let badgeSpan = document.createElement("p");
+            badgeSpan.classList.add("badge");
+            span.classList.add("date");
+            span.setAttribute("id", time);
+            span.innerHTML = time;
+            let todoshandling = await checkForTodos(time, date)
+            if (todoshandling.status == true) {
+                span.classList.add("todoCircle")
+                badgeSpan.innerHTML = todoshandling.length;
+                span.appendChild(badgeSpan);
+            }
+            else {
+                span.innerHTML = time;
+            }
+            if (currentMonth && time === currentDate) span.classList.add("active");
+            getSixthWeek.appendChild(span);
+        })
+    }
     timesnew.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("p");
@@ -246,10 +282,32 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
-        getFifthWeek.appendChild(span);
+        // if (currentMonth && time === currentDate) span.classList.add("active");
+        time6.length > 0 ? getSixthWeek.appendChild(span) : getFifthWeek.appendChild(span);
     })
 
+    timesnewSec.forEach(async time => {
+        let span = document.createElement("span");
+        let badgeSpan = document.createElement("p");
+        badgeSpan.classList.add("badge")
+        span.classList.add("last-month");
+        span.innerHTML = time;
+        let year = new Date().getFullYear();
+        let month = new Date().getMonth();
+        let newMonth = month + 1;
+
+        let todoshandling = await checkForTodos(time, new Date(year, newMonth, time))
+
+        if (todoshandling.status == true) {
+            span.classList.add("todoCircle")
+            badgeSpan.innerHTML = todoshandling.length;
+            span.appendChild(badgeSpan);
+        }
+        else {
+            span.innerHTML = time;
+        }
+        time6.length > 0 ? null : getSixthWeek.appendChild(span);
+    })
 }
 
 
