@@ -104,7 +104,6 @@ const currentMonthDays = (date, currentMonth) => {
     }
 
 
-
     timeold.forEach(async time => {
         let span = document.createElement("span");
         let badgeSpan = document.createElement("span");
@@ -122,7 +121,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        // if (currentMonth && time === currentDate) span.classList.add("active");
         span.innerHTML = time;
         getFirstWeek.appendChild(span);
     })
@@ -142,7 +141,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (currentMonth && time === (currentDate < 10 ? "0" + currentDate : currentDate)) span.classList.add("active");
 
         getFirstWeek.appendChild(span);
     })
@@ -163,7 +162,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (currentMonth && time === (currentDate < 10 ? "0" + currentDate : currentDate)) span.classList.add("active");
         getSecondWeek.appendChild(span);
     })
 
