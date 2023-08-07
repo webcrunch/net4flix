@@ -33,7 +33,7 @@ body {
     background: #2b4450;
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
-    height: 501px;
+    height: 60vh;
     perspective: 1000;
     transition: .9s;
     transform-style: preserve-3d;
@@ -45,7 +45,7 @@ body {
     background: #2b4450;
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
-    height: 501px;
+    height: 60vh;
     perspective: 1000;
     transition: .9s;
     transform-style: preserve-3d;
@@ -114,7 +114,7 @@ body {
 .weeks span.active {
     background: #f78536;
     height: 5.5vh;
-    width: 6vh;
+    width: 4.5vh;
     /* border-radius: 50%; */
 }
 
@@ -140,15 +140,18 @@ body {
 .badge {
     font-size: xx-small;
     position: relative;
-    top: -3.7vh;
-    left: 4vh;
+    padding-top: 1vh;
+    padding-left: 0.5vh;
+    top: -3.6vh;
+    left: 2vh;
 }
+
 
 
 .todoCircle {
     background: #fff;
     color: #666;
     height: 5.5vh;
-    width: 6vh;
+    width: 4.5vh;
     /* border-radius: 99%; */
 }
