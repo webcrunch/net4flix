@@ -1,17 +1,12 @@
-Feature: be able to log in to the application
+Feature: Add a new Todo to the list and to the calender
   As a user i want to be able to log in to the application
 
-  Background: Start from first page and log in
-    Given That i need to be on the first page
-    Then the user logs in
-
-  Scenario: Get to the calender page
-    Given When the user has logged in
-    Then The user gets to the calender page
-
-  Scenario: Get to the new todo view
-    Given that the user click on the "new todo" button
-    Then the view is displayed
+  Background: Start from first page and log in and get tho the calender page
+    Given That a user needs to be on the first page
+    And the user logs in
+    And the user got logged in
+    And the user gets to the calender page
+    And the user click on the "New Todo" button
 
   Scenario: add a new todo
     Given that the new todo view is displayed
