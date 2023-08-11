@@ -177,7 +177,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === (currentDate < 10 ? "0" + currentDate : currentDate)) span.classList.add("active");
+        if (currentMonth && time == (currentDate < 10 ? "0" + currentDate : currentDate)) span.classList.add("active");
         getSecondWeek.appendChild(span);
     })
 
@@ -197,7 +197,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (currentMonth && time == currentDate) span.classList.add("active");
         getThirdWeek.appendChild(span);
     })
 
@@ -217,7 +217,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (currentMonth && time == currentDate) span.classList.add("active");
         getFourthWeek.appendChild(span);
     })
 
@@ -237,7 +237,7 @@ const currentMonthDays = (date, currentMonth) => {
         else {
             span.innerHTML = time;
         }
-        if (currentMonth && time === currentDate) span.classList.add("active");
+        if (currentMonth && time == currentDate) span.classList.add("active");
         getFifthWeek.appendChild(span);
     })
 
@@ -258,7 +258,7 @@ const currentMonthDays = (date, currentMonth) => {
             else {
                 span.innerHTML = time;
             }
-            if (currentMonth && time === currentDate) span.classList.add("active");
+            if (currentMonth && time == currentDate) span.classList.add("active");
             getSixthWeek.appendChild(span);
         })
     }
