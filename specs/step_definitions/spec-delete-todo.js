@@ -5,7 +5,7 @@ Given('That a user starts on the first page', () => {
   cy.visit('127.0.0.1:5000');
 });
 
-Given('the user is logging in to the application', () => {
+Given('the user is loggin in on the application', () => {
   // TODO: implement step
   cy.get('#title').type("bwilcott0@fotki.com");
   cy.get('#password').type("VPheqB4H");
