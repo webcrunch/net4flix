@@ -2,10 +2,6 @@ import { Given, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 Given('That a user starts on the first page', () => {
   // TODO: implement step
-});
-
-Given('the user is loggin in on the application', () => {
-  // TODO: implement step
   cy.visit('127.0.0.1:5000');
 });
 
@@ -20,8 +16,6 @@ Given('the user is logging in to the application', () => {
 Given('the user browse to the calender page', () => {
   // TODO: implement step
   cy.visit('127.0.0.1:5000/source/html/pages/calender/calender.html')
-
-
 });
 
 Given('the user click on the {string} button to get to todo view', (a) => {

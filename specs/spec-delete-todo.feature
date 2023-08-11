@@ -4,7 +4,6 @@ Feature: Delete a Todo from the list and the calender view
     Background: Start from first page and log in and get tho the calender page
         Given That a user starts on the first page
         And the user is loggin in on the application
-        And the user is logging in to the application
         And the user browse to the calender page
         And the user click on the "New Todo" button to get to todo view
         And then the todo view will be displayed
