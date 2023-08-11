@@ -1,5 +1,5 @@
 Feature: Add a new Todo to the list and to the calender
-  As a user i want to be able to log in to the application
+  As a user i want to be able to create a todo
 
   Background: Start from first page and log in and get tho the calender page
     Given That a user needs to be on the first page
