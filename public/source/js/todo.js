@@ -58,11 +58,12 @@ const handligTodos = async () => {
 
 
 
-const removePost = async id => {
-    let todoA = await fetchTodoData();
-    localStorage.setItem("todos", JSON.stringify(todoA.filter(todo => todo.id !== id)));
-    let todoList = await fetchTodoData();
-    displayList(todoList);
+const removePost = async (id, date) => {
+    let todoBefore = await fetchTodoData();
+    localStorage.setItem("todos", JSON.stringify(todoBefore.filter(todo => todo.id !== id)));
+    let todoAfter = await fetchTodoData();
+    let todoListDisplay = todoAfter.filter(td => td.date == date);
+    displayList(todoListDisplay);
 }
 
 const addNewtodo = async (day, date) => {
@@ -141,7 +142,7 @@ const displayList = arrayn => {
             editPost(+e.target.id);
         })
         spanForDeletion.addEventListener("click", function (e) {
-            removePost(+e.target.id);
+            removePost(+e.target.id, a.date);
         })
     })
 
