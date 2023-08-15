@@ -67,11 +67,9 @@ const removePost = async (id, date) => {
 }
 
 const addNewtodo = async (day, date) => {
-    console.log(day, date);
     let first_ul = document.querySelector('#myUL');
     first_ul.replaceChildren();
     let rightMonth = date.getMonth() + 1;
-    console.log(rightMonth, date.getMonth())
     document.querySelector("#date").value = `${date.getFullYear()}-${rightMonth > 9 ? rightMonth : "0" + rightMonth}-${day}`
 }
 
