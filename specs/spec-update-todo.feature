@@ -1,4 +1,4 @@
-Feature: Delete a Todo from the list and the calender view
+Feature: Update a Todo from the list and the calender view
     As a user i want to be able to update a todo in the list
 
     Background: Start from first page and log in and get tho the calender page
