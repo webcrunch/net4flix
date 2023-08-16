@@ -4,12 +4,10 @@
 name: Node.js CI
 
 on:
-  push:
-    #- "**" feature-Ci/CD-further"
-    branches: ["**"]
   pull_request:
-    branches: ["main"]
-
+    branches:
+      [main,dev]
+      
 jobs:
   e2e:
     runs-on: ubuntu-latest
@@ -28,7 +26,9 @@ jobs:
           cache: "npm"
       - name: npm install
         run: npm ci
-      - name: gui start live server
-        run: npm run dev &
+      #- name: gui start live server
+      #  #run: npm run dev &
+      - name: fire up backend 
+        run: nohup npm run backend & exit 
       - name: gui testing
         run: npm test
