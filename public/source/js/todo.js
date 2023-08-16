@@ -56,14 +56,13 @@ const handligTodos = async () => {
 }
 
 
-
-
 const removePost = async (id, date) => {
     let todoBefore = await fetchTodoData();
     localStorage.setItem("todos", JSON.stringify(todoBefore.filter(todo => todo.id !== id)));
     let todoAfter = await fetchTodoData();
     let todoListDisplay = todoAfter.filter(td => td.date == date);
     displayList(todoListDisplay);
+    newDrawCalender();
 }
 
 const addNewtodo = async (day, date) => {
@@ -134,7 +133,6 @@ const displayList = arrayn => {
         li.appendChild(spanForDeletion)
         ul.appendChild(li);
         first_ul.appendChild(ul);
-
 
         spanForText.addEventListener("click", function (e) {
             editPost(+e.target.id);
