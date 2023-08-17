@@ -1,12 +1,13 @@
 
 const fetchTodoData = async () => await JSON.parse(localStorage.getItem("todos"))
 
-const handligTodos = async () => {
-    let todoA = await fetchTodoData();
+const handligTodos = () => {
+
     const myNodelist = document.getElementsByTagName("myUL");
 
-    document.querySelector('.updateBtn').addEventListener("click", function (e) {
+    document.querySelector('.updateBtn').addEventListener("click", async function (e) {
         e.preventDefault();
+        let todoA = await fetchTodoData();
         const close = document.querySelector('.editClose');
         const hidden = document.querySelector("#postId");
         let input = document.querySelector("#myInput").value;
@@ -19,23 +20,21 @@ const handligTodos = async () => {
         localStorage.setItem("todos", JSON.stringify(todoA));
         close.style.display = 'none';
         hidden.value = null;
-        let todoList = todoA.filter(td => td.date == date);
-        // document.querySelector('#myInput').value = null;
-        // document.querySelector('#date').value = null;
-        // const addButton = document.querySelector('.addBtn');
-        // const editButton = document.querySelector('.updateBtn')
-        // addButton.style.display = 'block';
-        // editButton.style.display = 'none';
-        //  let todoList = todoA.filter(td => td.date === date.value);
-        // input.value = null;
-        // date.value = null;
-        // handligTodos();
-        displayList(todoList);
+        document.querySelector('#myInput').value = null;
+        document.querySelector('#date').value = null;
+        const addButton = document.querySelector('.addBtn');
+        const editButton = document.querySelector('.updateBtn')
+        addButton.style.display = 'block';
+        editButton.style.display = 'none';
+        input.value = null;
+        date.value = null;
+        displayList(todoA.filter(td => td.date === date));
         newDrawCalender();
     });
 
-    document.querySelector('.addBtn').addEventListener("click", function (e) {
+    document.querySelector('.addBtn').addEventListener("click", async function (e) {
         e.preventDefault();
+        let todoA = await fetchTodoData();
         let input = document.querySelector("#myInput");
         let date = document.querySelector("#date");
         if (input.value.trim().length < 1 || date.value.trim().length < 1) return alert("error")
@@ -58,9 +57,11 @@ const handligTodos = async () => {
 
 const removePost = async (id, date) => {
     let todoBefore = await fetchTodoData();
+    console.log(id, date, todoBefore);
     localStorage.setItem("todos", JSON.stringify(todoBefore.filter(todo => todo.id !== id)));
     let todoAfter = await fetchTodoData();
     let todoListDisplay = todoAfter.filter(td => td.date == date);
+    console.log(todoListDisplay)
     displayList(todoListDisplay);
     newDrawCalender();
 }
@@ -109,10 +110,11 @@ const editPost = async id => {
 }
 
 const displayList = arrayn => {
+    console.log(arrayn);
     let first_ul = document.querySelector('#myUL');
     first_ul.replaceChildren();
     arrayn.forEach(a => {
-
+        console.log(a);
         let ul = document.createElement("ul");
         let li = document.createElement("li");
         let li2 = document.createElement("li");
@@ -143,9 +145,5 @@ const displayList = arrayn => {
     })
 
 }
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', handligTodos, false);
