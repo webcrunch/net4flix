@@ -1,0 +1,141 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.navbar ul {
+    height: 100%;
+    margin-bottom: 1;
+    padding: 0;
+
+}
+
+.navbar li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 1vw;
+    background-color: rgb(61, 61, 61);
+    display: inline-flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 0.5vh;
+    transition: 0.4s ease-in;
+    box-shadow: inset #000000 0.12vw 0 0.8vh 0.2vw;
+}
+
+.navbar li:hover {
+    box-shadow: inset #921818 9vw 0 9vh 0.2vw;
+    font-style: #aa0808;
+    transform: 0.2vw 0 0.5vh 0.2vw;
+}
+
+.logo {
+    height: 3vw;
+    width: 6vw;
+    margin-bottom: -1vw;
+    margin-right: 22vw;
+    margin-left: -30vw;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    transition: 0.2s ease-in;
+}
+
+
+content {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+content .chapters {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+    justify-content: center;
+    flex-basis: auto;
+}
+
+.chapters li {
+    display: flex;
+    flex-direction: row;
+    flex-direction: inherit;
+    align-items: stretch;
+    /* justify-content: center; */
+    flex-basis: auto;
+}
+
+
+.header {
+    border: 2px solid red;
+    background: gray;
+    padding: 2vh;
+}
+
+.updateBtn {
+    padding: 10px;
+    width: 40%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    display: none;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 40%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.todo-list {
+    cursor: pointer;
+}
+
+
+.editClose {
+    cursor: pointer;
+    display: none;
+}
+
+#myUL {
+    margin-top: 0.6vh;
+    color: #ffffff
+}

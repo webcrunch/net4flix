@@ -4,7 +4,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 const app = express();
 const port = 5000;
-
+const dbEnabled = false;
 const sequelize = new Sequelize('net4flix', 'root', 'root', {
   host: 'localhost',
   dialect: 'mysql',
@@ -29,16 +29,22 @@ const User = sequelize.define('users', {
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/schedule", (req,res) => {
+app.get("/schedule", (req, res) => {
   res.sendFile(path.join(__dirname, "public/source/html/pages/schedule/schedule.html"));
 });
-
-sequelize.sync()
-.then(() =>{
+if (dbEnabled) {
+  sequelize.sync()
+    .then(() => {
+      app.listen(port, () => {
+        console.log(`Server running at http://localhost:${port}`);
+      });
+    })
+    .catch((err) => {
+      console.error('Unable to connect to the database:', err);
+    });
+}
+else {
   app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
   });
-})
-.catch((err) => {
-  console.error('Unable to connect to the database:', err);
-});
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/source/css/calender.css">
+    <link rel="stylesheet" href="/source/css/todo.css">
+    <script src="/source/js/calender.js"></script>
+    <script src="/source/js/todo.js"> </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <img class="logo" src="/assets/net4flix-logo.png">
+                <li><a href="/source/html/pages/home/home.html">HOME</a></li>
+                <li><a>SCHEDULE</a></li>
+                <li><a href="/source/html/pages/learning-overview/learning-overview.html">LEARNING</a></li>
+                <!-- <li class="user_name"><a></a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="calendarTodo">
+            <content>
+                <div class="header">
+                    <span class="editClose">X</span>
+                    <h2>Todo list to calender</h2>
+                    <label for="myInput">Todo:</label>
+                    <input type="text" id="myInput" placeholder="Todos..."> <br><br>
+                    <label for="date">When:</label>
+                    <input type="date" id="date">
+                    <input type="hidden" id="postId" name="custId" value="">
+                    <br><br>
+                    <button class="addBtn">Add</button>
+                    <button class="updateBtn">Update</button>
+                </div>
+
+                <ul id="myUL">
+                </ul>
+            </content>
+        </div>
+        <div class="calendar">
+            <!-- <div class="calendar-wrapper">
+                <button id="btnPrev" type="button">Prev</button>
+                <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+            </div> -->
+
+            <div class="front">
+                <div class="current-date">
+                    <p id="preMonth">←</p>
+                    <h1 id="month-year"></h1>
+                    <p id="postMonth">→</p>
+                    <h1 id="clicked-day-date"></h1>
+                    <h1 id="day-date"></h1>
+                    <button id="newTodo">New Todo</button>
+                </div>
+
+                <div class="current-month">
+                    <ul class="week-days">
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                    </ul>
+
+                    <div class="weeks">
+                        <div class="first">
+                        </div>
+
+                        <div class="second">
+                        </div>
+
+                        <div class="third">
+                        </div>
+
+                        <div class="fourth">
+                        </div>
+
+                        <div class="fifth">
+                        </div>
+                        <div class="sixth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

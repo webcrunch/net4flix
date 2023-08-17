@@ -1,5 +1,5 @@
 const user = JSON.parse(localStorage.getItem("session"));
-const chapters = JSON.parse(localStorage.getItem("chapters"))
+const chapters = JSON.parse(localStorage.getItem("chapters"));
 const chapterFocused = localStorage.getItem("courseClicked");
 const progress = JSON.parse(localStorage.getItem("progress"));
 const populateData = () => {

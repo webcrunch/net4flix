@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/source/js/todo.js"> </script>
+    <!-- <script src="/source/js/calender.js"> </script> -->
+    <link rel="stylesheet" href="/source/css/todo.css">
+    <!-- <link rel="stylesheet" href="/source/css/calender.css"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" /> -->
+    <title>net4Flix -Todo/Calender</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <img class="logo" src="/assets/net4flix-logo.png">
+                <li><a href="/source/html/pages/home/home.html">HOME</a></li>
+                <li><a>SCHEDULE</a></li>
+                <li><a href="/source/html/pages/learning-overview/learning-overview.html">LEARNING</a></li>
+                <!-- <li class="user_name"><a></a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <content>
+            <div class="header">
+                <span class="editClose">X</span>
+                <h2>Todo list to calender</h2>
+                <label for="myInput">Todo:</label>
+                <input type="text" id="myInput" placeholder="Todos..."> <br><br>
+                <label for="date">When:</label>
+                <input type="date" id="date">
+                <input type="hidden" id="postId" name="custId" value="">
+                <br><br>
+                <button class="addBtn">Add</button>
+                <button class="updateBtn">Update</button>
+            </div>
+
+            <ul id="myUL">
+            </ul>
+        </content>
+        <!-- <div class="card">
+            <div class="calendar-toolbar">
+                <button class="prev month-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="current-month"></div>
+                <button class="next month-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="calendar">
+                <div class="weekdays">
+                    <div class="weekday-name">Mon</div>
+                    <div class="weekday-name">Tue</div>
+                    <div class="weekday-name">Wen</div>
+                    <div class="weekday-name">Thu</div>
+                    <div class="weekday-name">Fri</div>
+                    <div class="weekday-name">Sat</div>
+                    <div class="weekday-name">Sun</div>
+                </div>
+                <div class="calendar-days"></div>
+            </div>
+            <div class="goto-buttons">
+                <button type="button" class="btn prev-year">Prev Year</button>
+                <button type="button" class="btn today">Today</button>
+                <button type="button" class="btn next-year">Next Year</button>
+            </div>
+        </div> -->
+    </main>
+
+</body>
+
+</html>
