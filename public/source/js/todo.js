@@ -18,6 +18,8 @@ const handligTodos = () => {
         post.date = date;
         todoA[id] = post;
         localStorage.setItem("todos", JSON.stringify(todoA));
+        let todoB = await fetchTodoData();
+        let todoListDate = todoB.filter(td => td.date === date);
         close.style.display = 'none';
         hidden.value = null;
         document.querySelector('#myInput').value = null;
@@ -28,7 +30,7 @@ const handligTodos = () => {
         editButton.style.display = 'none';
         input.value = null;
         date.value = null;
-        displayList(todoA.filter(td => td.date === date));
+        displayList(todoListDate);
         newDrawCalender();
     });
 
@@ -110,11 +112,9 @@ const editPost = async id => {
 }
 
 const displayList = arrayn => {
-    console.log(arrayn);
     let first_ul = document.querySelector('#myUL');
     first_ul.replaceChildren();
     arrayn.forEach(a => {
-        console.log(a);
         let ul = document.createElement("ul");
         let li = document.createElement("li");
         let li2 = document.createElement("li");
