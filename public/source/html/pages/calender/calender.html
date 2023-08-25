@@ -28,24 +28,37 @@
 
     <div class="container">
         <div class="calendarTodo">
-            <content>
-                <div class="header">
-                    <span class="editClose">X</span>
-                    <h2>Todo list to calender</h2>
-                    <label for="myInput">Todo:</label>
-                    <input type="text" id="myInput" placeholder="Todos..."> <br><br>
-                    <label for="date">When:</label>
-                    <input type="date" id="date">
-                    <input type="hidden" id="postId" name="custId" value="">
-                    <br><br>
-                    <button class="addBtn">Add</button>
-                    <button class="updateBtn">Update</button>
+                <div class="todoFrame">
+                    <div class="todo-top">
+                        <span class="editClose">X</span>
+                            <div class="todo-top-inside">
+                                <h2>Todo list to calender</h2>
+                                <label class="green" for="myInput">Todo:</label>
+                                <input type="text" id="myInput" placeholder="Todos...">
+                            </div>
+                            
+                    </div>
+                    <div class="todo-bottom">
+                        <div class="todo-bottom-inside">
+                            <label for="date">When:</label>
+                            <input type="date" id="date"> 
+                            <label for="date">When:</label>
+                            <input type="date" id="date">
+                            <input type="hidden" id="postId" name="custId" value="">
+                            <button class="addBtn">Add New</button>
+                            <button class="updateBtn">Update</button>
+                        </div>
+                    </div>
+                   
+                    
+                   
                 </div>
 
                 <ul id="myUL">
                 </ul>
-            </content>
+           
         </div>
+
         <div class="calendar">
             <!-- <div class="calendar-wrapper">
                 <button id="btnPrev" type="button">Prev</button>
@@ -95,7 +108,11 @@
                 </div>
             </div>
         </div>
+
+        
+
     </div>
+    
 </body>
 
 </html>
