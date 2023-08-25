@@ -36,7 +36,7 @@ Given('then a title and date will be added', () => {
 
 Given('the new todo will be added when user clicked on {string} button', (a) => {
   // TODO: implement step
-  cy.get(".header").find('button').contains(a).click()
+  cy.get(".todo-bottom-inside").find('button').contains(a).click()
 });
 
 Given('that there is at least one todo in the list', () => {

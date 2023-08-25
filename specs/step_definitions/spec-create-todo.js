@@ -46,6 +46,6 @@ Given('the date for the todo is added', () => {
 
 Then('when the user click on the {string} button the todo should be added to the list below', (a) => {
   // TODO: implement step
-  cy.get(".header").find('button').contains(a).click()
+  cy.get(".todo-bottom-inside").find('button').contains(a).click()
   cy.get('#myUL').should('have.length', 1);
 });
