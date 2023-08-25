@@ -43,7 +43,7 @@ Given('the title and date is added', () => {
 
 Given('add to the list wh when the user click on the {string} button below', (a) => {
   // TODO: implement step
-  cy.get(".header").find('button').contains(a).click()
+  cy.get(".todo-bottom-inside").find('button').contains(a).click()
 });
 
 Given('That there is elements in the todo list', () => {
@@ -64,7 +64,7 @@ Given('change title and date for the todo', () => {
 });
 
 Given('click on the {string} button to update the todo', (a) => {
-  cy.get(".header").find('button').contains(a).click()
+  cy.get(".todo-bottom-inside").find('button').contains(a).click()
 });
 
 Then('check so the new values is correct for the todo', () => {
